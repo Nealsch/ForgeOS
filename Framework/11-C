@@ -1,0 +1,100 @@
+# Decision Making
+
+## Purpose
+
+Decision Making defines how engineering decisions are made, recorded and escalated within the ForgeOS collaboration model.
+
+It establishes a clear boundary between decisions that AI Agents may make autonomously and decisions that require human approval.
+
+---
+
+## Decision Authority
+
+ForgeOS separates decision authority into two categories:
+
+### Autonomous AI Decisions
+
+AI Agents may make decisions that:
+
+* Fall within their specialist engineering responsibility
+* Are guided by applicable Standards
+* Are reversible or low-risk
+* Do not alter project scope, budget or timeline
+* Do not introduce new dependencies or technologies
+* Do not conflict with existing project decisions
+
+### Human-Required Decisions
+
+The Product Owner must be consulted for decisions that:
+
+* Alter project scope or objectives
+* Affect timeline or budget
+* Introduce architectural changes
+* Require selecting between significantly different approaches
+* Involve external dependencies or integrations
+* Affect security posture or compliance
+* Overturn a previous recorded decision
+* Are explicitly flagged as requiring approval
+
+---
+
+## Decision Escalation
+
+When an Agent encounters a decision outside its authority, it should:
+
+1. **Pause the activity** — Do not proceed on assumption.
+2. **Document the decision point** — Record what needs to be decided and why.
+3. **Present options** — Where practical, present the alternatives with trade-offs.
+4. **Escalate via Collaboration Orchestration** — Route the decision to the AI Program Manager, which surfaces it to the Product Owner.
+5. **Await direction** — Resume only after a decision is made.
+
+---
+
+## Decision Recording
+
+All significant engineering decisions should be recorded as **Architectural Decision Records (ADRs)** or equivalent project documentation.
+
+A decision is significant if it:
+
+* Affects architecture
+* Establishes a convention
+* Resolves ambiguity
+* Introduces or removes a dependency
+* Is likely to be questioned later
+
+ADRs should record:
+
+* The decision
+* The context that led to it
+* The alternatives considered
+* The consequences
+
+---
+
+## Conflict Resolution
+
+If decisions conflict, the following precedence applies:
+
+1. Product Owner direction
+2. Recorded project decisions (ADRs)
+3. ForgeOS Standards
+4. ForgeOS Governance
+5. Agent recommendation
+
+A lower precedence must never override a higher precedence without explicit approval.
+
+---
+
+## Relationship to the AI Program Manager
+
+The AI Program Manager is responsible for surfacing decisions to the Product Owner and recording the outcome. It does not make engineering decisions itself.
+
+Agents make engineering recommendations and decisions within their authority, while the AI Program Manager ensures that decisions requiring human judgement reach the Product Owner.
+
+---
+
+## ForgeOS Principle
+
+Good engineering requires good decisions.
+
+Decision Making ensures that decisions are made at the right level, by the right role and recorded for future traceability.

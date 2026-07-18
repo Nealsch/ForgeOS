@@ -1,0 +1,95 @@
+# Standards Loading
+
+## Purpose
+
+Standards Loading defines how Collaboration Orchestration identifies and loads the applicable ForgeOS Standards for an engineering activity.
+
+It ensures that every engineering decision and deliverable is guided by the correct standards before work begins.
+
+---
+
+## Loading Principles
+
+Standards loading should be:
+
+* **Task-driven** — Only standards relevant to the current activity are loaded.
+* **Phase-aware** — Standards are selected based on the SDLC phase.
+* **Minimal** — Only the applicable sections of a standard need be loaded.
+* **Authoritative** — Standards are treated as immutable during project work.
+
+---
+
+## Standards Categories
+
+ForgeOS Standards are organised into categories. The applicable category depends on the activity:
+
+| Category | Applies When |
+| --- | --- |
+| 01-Framework | Establishing core engineering principles |
+| 02-Architecture | Designing software systems |
+| 03-Coding | Writing source code |
+| 04-Documentation | Creating or maintaining documentation |
+| 05-Security | Performing security-sensitive work |
+| 06-Testing | Verifying software |
+| 07-Deployment | Building, releasing or operating software |
+| 08-Design | Designing user interfaces and experiences |
+
+---
+
+## Loading Process
+
+The general process for loading Standards is:
+
+1. **Identify the engineering activity** — Understand what work is being performed.
+2. **Determine the SDLC phase** — Identify where the activity sits in the Workflow.
+3. **Identify relevant Standards categories** — Match the activity to one or more categories.
+4. **Select specific Standards** — Within each category, identify the applicable standards.
+5. **Load the Standards** — Provide them as context for the engineering activity.
+
+---
+
+## Standards and Skills
+
+Skills define **how** work is performed.
+
+Standards define **how well** the work must be performed.
+
+When a Skill is selected, Collaboration Orchestration should also identify the Standards that govern that Skill's application.
+
+Example:
+
+```text
+Skill: API Design
+Standards: Architecture Standard, Security Standard
+```
+
+---
+
+## External Standards
+
+Some projects must comply with external standards such as:
+
+* Industry regulations
+* Security frameworks
+* Accessibility guidelines
+* Domain-specific standards
+
+External standards are treated the same way as ForgeOS Standards—they are loaded as context and treated as authoritative for the activity.
+
+External standards are typically referenced from project documentation or Governance.
+
+---
+
+## Relationship to the AI Program Manager
+
+The AI Program Manager invokes Collaboration Orchestration to load the applicable Standards. It does not select Standards directly.
+
+This ensures that Standards loading remains consistent and driven by the Framework, not by ad hoc AI judgement.
+
+---
+
+## ForgeOS Principle
+
+Standards define the quality bar for every ForgeOS project.
+
+Standards Loading ensures that the correct quality expectations are applied to every engineering activity.

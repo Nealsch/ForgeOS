@@ -1,0 +1,45 @@
+# ---- Secrets & environment ----
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# ---- OS ----
+.DS_Store
+Thumbs.db
+
+# ---- Editors ----
+.idea/
+*.swp
+*~
+
+# ---- Dependencies (common ecosystems) ----
+node_modules/
+.pnp
+.pnp.js
+vendor/
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# ---- Build output ----
+dist/
+build/
+out/
+target/
+*.log
+
+# ---- Test / coverage ----
+coverage/
+.nyc_output/
+.pytest_cache/
+htmlcov/
+
+# ---- Codebase analysis tool caches (per ADR-008) ----
+.graphify/
+
+# ---- AI agent ephemeral cache (not authoritative) ----
+.ai/cache/*
+!.ai/cache/README.md
