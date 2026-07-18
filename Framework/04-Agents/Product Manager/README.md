@@ -98,7 +98,7 @@ These outputs become the primary inputs for the Architect.
 
 The Product Manager may apply skills including:
 
-* Requirements Elicitation (NB-Grill)
+* Requirements Elicitation (Forge-Grill)
 * Requirements Analysis
 * Stakeholder Interviewing
 * Scope Definition

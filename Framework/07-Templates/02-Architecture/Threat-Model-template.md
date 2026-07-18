@@ -7,7 +7,7 @@ consumed_by:
   - Forge-Backend-Development
   - Forge-Frontend-Development
   - Forge-API-Design
-  - Forge-Security-Engineer
+  - Security Engineer
 category: 02-Architecture
 template_type: primary
 ---

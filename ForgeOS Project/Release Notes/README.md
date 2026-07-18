@@ -39,7 +39,8 @@ Each release has one file named after its semantic version:
 ```text
 ForgeOS Project/Release Notes/
 ├── README.md        ← this file
-└── 1.0.0.md         ← release notes for v1.0.0
+├── 1.0.0.md         ← release notes for v1.0.0
+└── 1.0.1.md         ← release notes for v1.0.1
 ```
 
 Future releases follow the same pattern: `1.1.0.md`, `1.2.0.md`, `2.0.0.md`, etc.
@@ -51,6 +52,7 @@ Future releases follow the same pattern: `1.1.0.md`, `1.2.0.md`, `2.0.0.md`, etc
 | Version | Date       | Tag      | Notes |
 | ------- | ---------- | -------- | ----- |
 | 1.0.0   | 2026-07-18 | `v1.0.0` | [1.0.0.md](1.0.0.md) — Initial stable release of the ForgeOS Framework. |
+| 1.0.1   | 2026-07-18 | `v1.0.1` | [1.0.1.md](1.0.1.md) — Patch: cleanup, referential integrity, Cline skill installer. |
 
 ---
 

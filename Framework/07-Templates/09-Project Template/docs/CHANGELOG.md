@@ -3,7 +3,7 @@ purpose: Chronological, human-readable record of notable changes for each releas
 when_used: At every release; updated during the Release phase.
 produced_by: Forge-Knowledge-Management
 consumed_by:
-  - Forge-Release-Process
+  - Release Process
   - Product Owner
   - Stakeholders
 category: 06-Delivery

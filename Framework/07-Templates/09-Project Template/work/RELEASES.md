@@ -3,7 +3,7 @@ purpose: Record of releases: version, date, scope, and status.
 when_used: During the Release phase and for audit/history.
 produced_by: Forge-Knowledge-Management
 consumed_by:
-  - Forge-Release-Process
+  - Release Process
   - Product Owner
   - Stakeholders
 category: 06-Delivery

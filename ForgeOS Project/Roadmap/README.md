@@ -22,9 +22,9 @@ The roadmap communicates **where ForgeOS is going**. It is the forward-looking c
 
 # Current State
 
-**ForgeOS v1.0.0** is the current baseline. It was released on **2026-07-18**.
+**ForgeOS v1.0.1** is the current release. It was released on **2026-07-18** as a backwards-compatible patch (cleanup, referential-integrity fixes, Cline skill installer).
 
-At v1.0.0 the framework is considered feature-complete and internally consistent. The Product Owner has confirmed that **no new functionality is planned** at this time.
+At v1.0.0 the framework was declared feature-complete and internally consistent. The Product Owner has confirmed that **no new functionality is planned**; v1.0.1 is a patch and does not change that posture.
 
 ---
 
@@ -62,7 +62,8 @@ The roadmap does **not** replace the backlog. It prioritises and schedules selec
 
 | Version | Date | Status | Notes |
 | --- | --- | --- | --- |
-| 1.0.0 | 2026-07-18 | **Current** | [Release Notes](../Release%20Notes/1.0.0.md) · [Release Record](../../Framework/03-Governance/Version/Releases/1.0.0.md) |
+| 1.0.0 | 2026-07-18 | Released | [Release Notes](../Release%20Notes/1.0.0.md) · [Release Record](../../Framework/03-Governance/Version/Releases/1.0.0.md) |
+| 1.0.1 | 2026-07-18 | **Current** | [Release Notes](../Release%20Notes/1.0.1.md) · [Release Record](../../Framework/03-Governance/Version/Releases/1.0.1.md) |
 
 ---
 
@@ -76,5 +77,6 @@ This roadmap is living project documentation. It is owned by the **Product Owner
 
 * `Framework/03-Governance/release-process.md` — step 8 updates this roadmap.
 * `Framework/07-Templates/01-Product/Roadmap-template.md` — the roadmap structure.
-* `ForgeOS Project/Backlog/documentation-gaps-backlog.md` — known candidate work.
-* `ForgeOS Project/Release Notes/1.0.0.md` — what shipped in v1.0.0.
+* `ForgeOS Project/Backlog/documentation-gaps-backlog.md` — known candidate work (v1.0.0).
+* `ForgeOS Project/Backlog/skill-graph-gaps-backlog.md` — known candidate work (v1.0.1).
+* `ForgeOS Project/Release Notes/1.0.1.md` — what shipped in v1.0.1.

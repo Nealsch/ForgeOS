@@ -5,7 +5,7 @@ produced_by: Forge-Test-Strategy
 consumed_by:
   - QA Engineer
   - Forge-Test-Planning
-  - Forge-Release-Process
+  - Release Process
 category: 04-Quality
 template_type: primary
 framework_authority: Framework/07-Templates/04-Quality/Test-Plan-template.md

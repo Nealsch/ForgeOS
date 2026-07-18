@@ -5,7 +5,7 @@ produced_by: Forge-Documentation-Generation
 consumed_by:
   - All Agents
   - Forge-Context-Loading
-  - Forge-Onboarding
+  - Onboarding
 category: 07-Documentation
 template_type: primary
 framework_authority: Framework/09-Onboarding/README.md
