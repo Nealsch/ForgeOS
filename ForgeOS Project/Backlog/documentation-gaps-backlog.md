@@ -152,13 +152,13 @@ All files under `Framework/07-Templates/09-Project Template/` are zero-byte temp
 | # | Path | Status | Notes |
 | --- | --- | --- | --- |
 | 65 | `ForgeOS Project/Backlog/` | In Progress | This file. |
-| 66 | `ForgeOS Project/Release Notes/` | Open | Add README explaining purpose + release index. |
-| 67 | `ForgeOS Project/Roadmap/` | Open | Add README explaining purpose + roadmap content. |
-| 68 | `Framework/02-Standards/09-External-Industry/` | Open | Decide whether to populate or remove the category. |
-| 69 | `Framework/03-Governance/Version/Releases/` | Open | Add README or release records. |
-| 70 | `Framework/10-Assets/Branding/` | Open | Holds binary assets — add README index if assets exist. |
-| 71 | `Framework/10-Assets/Diagrams/` | Open | Referenced by docs — add diagrams or README. |
-| 72 | `Framework/10-Assets/Icons/` | Open | Holds binary assets — add README index if assets exist. |
+| 66 | `ForgeOS Project/Release Notes/` | ✅ Completed | Add README explaining purpose + release index. |
+| 67 | `ForgeOS Project/Roadmap/` | ✅ Completed | Add README explaining purpose + roadmap content. |
+| 68 | `Framework/02-Standards/09-External-Industry/` | ✅ Completed | Decide whether to populate or remove the category. |
+| 69 | `Framework/03-Governance/Version/Releases/` | ✅ Completed | Add README or release records. |
+| 70 | `Framework/10-Assets/Branding/` | ✅ Completed | Holds binary assets — add README index if assets exist. |
+| 71 | `Framework/10-Assets/Diagrams/` | ✅ Completed | Referenced by docs — add diagrams or README. |
+| 72 | `Framework/10-Assets/Icons/` | ✅ Completed | Holds binary assets — add README index if assets exist. |
 
 ### Project Template Structural (need `.gitkeep` only)
 
@@ -186,7 +186,7 @@ All files under `Framework/07-Templates/09-Project Template/` are zero-byte temp
 | 🟢 Low | 35 | ✅ All completed — YAML frontmatter (purpose, when_used, produced_by, consumed_by, category, template_type, framework_authority) added to each slot, cross-linked to Framework authority. |
 | 📁 Folder (Framework/Project) | 8 | Add README or content. |
 | 📁 Folder (Project Template) | 9 | ✅ All completed — `.gitkeep` added to 9 genuinely-empty structural dirs. |
-| **Total** | **81** | **All resolved.** |
+| **Total** | **81** | **All resolved — v1.0.0 released.** |
 
 ---
 
