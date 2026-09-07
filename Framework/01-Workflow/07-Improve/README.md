@@ -50,18 +50,12 @@ Continuous improvement is a collaborative responsibility shared across the engin
 
 # Primary Skills
 
-The Product Manager may utilise skills including:
+The Product Manager may utilise ForgeOS Skills including:
 
-* Product Evaluation
-* Backlog Refinement
-* Feature Prioritisation
-* Root Cause Analysis
-* Technical Debt Assessment
-* Retrospective Facilitation
-* Metrics Analysis
-* Roadmap Planning
-* Continuous Improvement
-* Lessons Learned
+* `Forge-Prioritisation`
+* `Forge-Technical-Debt-Assessment`
+
+Skills required by this phase that are not yet in the catalogue (Product Evaluation, Backlog Refinement, Retrospective Facilitation, Metrics Analysis, Roadmap Planning, Continuous Improvement) are tracked in the ForgeOS Project backlog (see WI-001).
 
 ## Codebase-Driven Improvement (ADR-007 / ADR-008)
 

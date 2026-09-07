@@ -120,3 +120,16 @@ tool-preferences.md
 ```
 
 If additional documentation is required, it should first be considered for inclusion in the Framework before being added to `.clinerules`.
+
+# File Encoding Rules
+
+- All files must be UTF-8 without BOM.
+- Use LF line endings.
+- Never edit files containing binary content.
+- Before replace_in_file:
+  - verify exact text match
+  - preserve indentation
+  - preserve line endings
+- If replace_in_file fails twice:
+  - stop attempting replacements
+  - rewrite the complete file using write_to_file

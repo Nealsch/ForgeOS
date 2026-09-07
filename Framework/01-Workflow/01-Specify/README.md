@@ -49,17 +49,17 @@ When the project is not greenfield but inherits an existing codebase, the **Code
 
 # Primary Skills
 
-The Product Manager may utilise skills including:
+The Product Manager may utilise ForgeOS Skills including:
 
-* Requirements Elicitation
-* Requirements Analysis
-* Stakeholder Interviewing
-* User Story Development
-* Acceptance Criteria Definition
-* Scope Definition
-* Product Prioritisation
-* Glossary Management
-* Risk Assessment
+* `Forge-Requirements-Elicitation`
+* `Forge-Requirements-Analysis`
+* `Forge-User-Story-Definition`
+* `Forge-Acceptance-Criteria`
+* `Forge-Prioritisation`
+* `Forge-Knowledge-Management`
+* `Forge-Documentation-Generation`
+
+Skills required by this phase that are not yet in the catalogue (Scope Definition, Risk Assessment, Glossary Management) are tracked in the ForgeOS Project backlog (see WI-001).
 
 ---
 

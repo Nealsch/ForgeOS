@@ -48,11 +48,11 @@ Each Framework component has a distinct responsibility.
 | Agents                      | Define **who** performs the specialist engineering work.          |
 | Skills                      | Define **what capability is applied and how work is approached**.  |
 | Standards                   | Define **how well the work must be performed**.                    |
-| Governance                  | Defines project-specific constraints and behavioural rules.        |
+| Governance                  | Applies uniform lifecycle control (change, release, version, compatibility).       |
 | Templates                   | Define required outputs and artefact structures.                   |
 | Collaboration Orchestration | Coordinates how engineering intent is transformed into coordinated execution. |
 
-Skills enable Agents to perform work while remaining governed by Standards and constrained by project Governance.
+Skills enable Agents to perform work while meeting the expectations of Standards and complying with Governance lifecycle controls. Project-specific constraints are carried in Project Documentation, not Governance.
 
 **Collaboration Orchestration** selects the appropriate Skills based on task context, SDLC phase and required capability. The **AI Program Manager** invokes Collaboration Orchestration to ensure that the correct Skills are applied to each engineering activity.
 
@@ -81,7 +81,6 @@ Not Skills:
 
 Technology-specific knowledge belongs in:
 
-* Governance
 * Project documentation
 * Technology profiles
 * Implementation guides
@@ -315,7 +314,7 @@ Examples:
 * Backup and Recovery
 * Configuration Management
 
-Technology-specific capabilities such as Docker, Kubernetes or Cloud platforms should be represented through Governance or Technology Profiles.
+Technology-specific capabilities such as Docker, Kubernetes or Cloud platforms should be represented through Technology Profiles or Project Documentation.
 
 ---
 
@@ -435,6 +434,6 @@ Agents perform the work.
 
 Standards define expectations.
 
-Governance defines constraints.
+Governance applies lifecycle control.
 
 Skills provide the capability required to consistently produce high-quality software throughout the Software Development Lifecycle.

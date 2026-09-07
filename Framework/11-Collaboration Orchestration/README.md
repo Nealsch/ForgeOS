@@ -22,7 +22,7 @@ Each framework component has a single responsibility.
 | Agents                      | Define **who** performs the specialist engineering work.                         |
 | Skills                      | Define **how** engineering capabilities are performed.                            |
 | Standards                   | Define the engineering rules and quality expectations.                            |
-| Governance                  | Defines project-specific constraints and behavioural rules.                       |
+| Governance                  | Applies uniform lifecycle control (change, release, version, compatibility).      |
 | Templates                   | Define the standard structure of engineering artifacts.                           |
 | Collaboration Orchestration | Defines **how humans and AI collaborate to perform work using the framework.**    |
 
@@ -44,6 +44,7 @@ Collaboration Orchestration provides the following capabilities. Each capability
 | Decision Making                 | Defines how decisions are captured and escalated.                                       | `Decision-Making.md`      |
 | Orchestration Lifecycle         | Defines the end-to-end sequence for an engineering activity.                            | `Orchestration-Lifecycle.md` |
 | AI Program Manager              | The persistent collaborative role that invokes the above capabilities.                  | `AI-Program-Manager.md`   |
+| Product Owner                   | The human authority who directs the process through the AI Program Manager.             | `Product-Owner.md`        |
 
 ---
 

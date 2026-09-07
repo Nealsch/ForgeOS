@@ -93,7 +93,7 @@ Platform Runtime Configuration
 | AGENTS.md                           | Framework governance and repository operation | Yes                        |
 | Workflow                            | SDLC phases, deliverables and quality gates   | Yes                        |
 | Standards                           | Engineering practices                         | Yes                        |
-| Governance                          | Project-specific constraints                  | Yes                        |
+| Governance                          | Uniform lifecycle control (change, release, version, compatibility) | Yes                        |
 | Agents                              | Engineering responsibilities                  | No                         |
 | Skills                              | Engineering capabilities                      | No                         |
 | Templates                           | Standard document structures                  | No                         |
@@ -158,9 +158,8 @@ If a conflict is detected between `.clinerules` and the Framework, the Framework
 ForgeOS/
 
 ├── Framework/
-├── ForgeOS Project/
-├── tooling/
-├── scripts/
+├── ForgeOS Project/       (ADRs, Backlog, Roadmap, Release Notes, Scripts)
+├── Tooling/
 ├── .clinerules/
 ├── README.md
 └── AGENTS.md
@@ -168,7 +167,7 @@ ForgeOS/
 
 The **Framework** contains reusable engineering knowledge.
 
-The **ForgeOS Project** folder contains living project documentation for the ForgeOS framework itself (ADRs, Roadmap, Backlog, Release Notes). It is not part of the reusable template.
+The **ForgeOS Project** folder contains living project documentation for the ForgeOS framework itself (ADRs, Backlog, Roadmap, Release Notes and project Scripts per ADR-006). It is not part of the reusable template.
 
 ---
 
@@ -199,7 +198,7 @@ Responsibilities:
 | --------------------------- | -------------------------------------------------------------- |
 | workflow                    | Defines the SDLC, phases, gates and deliverables               |
 | standards                   | Long-lived engineering standards                               |
-| governance                  | Governance, constraints and project rules                      |
+| governance                  | Uniform lifecycle control (change, release, version, compatibility) |
 | agents                      | Specialist engineering roles responsible for work              |
 | skills                      | Individual capabilities used by agents                         |
 | prompts                     | Reusable prompt assets                                         |
@@ -256,9 +255,10 @@ Each phase contains:
 * Deliverables
 * Applicable Standards
 * Responsible Agents
-* Exit Gate
+* Exit Criteria
+* Quality Gate
 
-A phase is considered complete only after its exit gate has been successfully passed.
+A phase is considered complete only after its Exit Criteria have been met and its Quality Gate review has been successfully passed. A **Quality Gate** is the formal review at the end of an SDLC phase that verifies the phase's Exit Criteria before work proceeds.
 
 ---
 
@@ -281,31 +281,32 @@ Preserve context for reasoning rather than repository exploration.
 
 ---
 
-# Standards Hierarchy
+# Engineering Guidance Hierarchy
 
-ForgeOS applies engineering guidance using the following precedence.
+Within the Framework, engineering guidance has the following canonical precedence.
 
 ```
-Engineering Standards
-
-↓
-
-Project Rules
-
-↓
-
-Workflow Requirements
-
-↓
-
+Workflow
+    │
+    ▼
+Standards
+    │
+    ▼
+Governance
+    │
+    ▼
 Agent Responsibilities
-
-↓
-
+    │
+    ▼
 Skill Implementation
 ```
 
-If two documents conflict, the document higher in the hierarchy takes precedence.
+* **Workflow** owns the SDLC — phases, gates and deliverables.
+* **Standards** define how work is performed.
+* **Governance** applies uniform lifecycle control (change, release, version, compatibility) on top of the Workflow and Standards.
+* **Project Rules** are *not* part of the Framework hierarchy. Project-specific constraints belong to **Project Documentation** and apply within, never against, the Framework.
+
+If two Framework documents conflict, the document higher in this hierarchy takes precedence. Project rules may tighten but never relax Framework requirements.
 
 ---
 
@@ -341,13 +342,15 @@ Skills may be shared by multiple agents.
 
 Examples include:
 
-* API Design
-* Database Design
-* React Development
-* Security Review
-* Performance Optimisation
-* Test Design
-* Documentation
+* Forge-API-Design
+* Forge-Database-Design
+* Forge-Frontend-Development
+* Forge-Security-Review
+* Forge-Performance-Optimisation
+* Forge-Test-Strategy
+* Forge-Documentation-Generation
+
+Skill names describe **engineering capabilities**, not specific technologies. Technology-specific knowledge (for example, a particular framework or language) belongs in Project Documentation, not in the Skills catalogue.
 
 Skills never own workflow.
 
@@ -361,7 +364,7 @@ An SDLC phase is complete only when:
 * Applicable standards have been followed.
 * Applicable project rules have been satisfied.
 * Required reviews have completed.
-* The phase exit gate has passed.
+* The phase Quality Gate has passed.
 * Documentation has been updated where necessary.
 
 Only then may work proceed to the next SDLC phase.

@@ -46,18 +46,12 @@ The Product Manager confirms that the release satisfies the agreed business obje
 
 # Primary Skills
 
-The DevOps Engineer may utilise skills including:
+The DevOps Engineer may utilise ForgeOS Skills including:
 
-* Build Automation
-* Release Management
-* CI/CD Pipeline Execution
-* Infrastructure as Code
-* Docker Deployment
-* Environment Configuration
-* Version Management
-* Rollback Planning
-* Deployment Verification
-* Operational Readiness
+* `Forge-Standards-Compliance`
+* `Forge-Documentation-Generation`
+
+The Skills catalogue currently has no Delivery category (`05-Skills/06-Delivery/` is empty), so the majority of this phase's required capabilities — Build Automation, Release Management, CI/CD Pipeline Execution, Infrastructure as Code, Environment Configuration, Version Management, Rollback Planning, Deployment Verification and Operational Readiness — are **catalogue gaps** tracked in the ForgeOS Project backlog (see WI-001).
 
 ---
 

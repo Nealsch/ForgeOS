@@ -28,7 +28,7 @@ This principle is what allows AI assistance to be powerful without compromising 
 | **Quality decisions** (test strategy, release readiness) | QA Engineer | QA Agent recommends | Test plan, release gates |
 | **Security decisions** (risk acceptance, mitigations) | Security Engineer (with Product Owner for acceptance) | Security Agent recommends | Threat model, security risk assessment |
 | **Release decisions** (what ships, when) | Product Owner | Engineering verifies gates | Release record, release notes |
-| **Routing decisions** (Agent/Skill/Standard/Template selection) | Collaboration Orchestration (automated, per Work Item enrichment) | AI performs selection after approval | Work Item `Required Agents/Skills/Standards/Templates` |
+| **Routing decisions** (Agent/Skill/Standard/Template selection) | Collaboration Orchestration, performed in the **Routing phase** based on intake recommendations, only **after** Product Owner approval of the Work Item | Orchestration performs the selection; the AI Program Manager presents the routing outcome | Work Item `Required Agents/Skills/Standards/Templates` fields |
 
 ---
 

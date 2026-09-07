@@ -104,34 +104,54 @@ The standard session structure defined by ForgeOS Templates.
 
 ---
 
+# Session Model: Session vs Task
+
+A **session is a container**; a **task owns the workflow**.
+
+* Quality Gates and Security Gates belong to the **task's** SDLC phases, never to the session.
+* A session is a period of engineering activity that may contain **multiple tasks**, each progressing through its own workflow.
+* The session owns **continuity**: context, state, and the handoff between sessions.
+
+---
+
 # Session Lifecycle
 
-A session follows this lifecycle:
+A session follows this lifecycle. The propose → approve → execute loop repeats for each task within the session:
 
 ```text
 Session Start
       |
       ▼
-Review Previous State
+Resume: Review Previous State (session handoff, active Work Items)
       |
       ▼
-Establish Current Objective
+┌─────────────────────────────────────────────┐
+│  Propose Next Priority Task                 │◀────┐
+│        |                                    │     │
+│        ▼                                    │     │
+│  Product Owner Approval                     │     │
+│        |                                    │     │
+│        ▼                                    │     │
+│  Execute Task Through the Workflow          │─────┘
+│  (gates apply at the task's SDLC phases)    │  repeat
+└─────────────────────────────────────────────┘
       |
       ▼
-Load Required Context
+Session End Requested
+(Product Owner request, or context budget running low — offer proactively)
       |
       ▼
-Perform Engineering Work
+Save / Commit / Push All Files to GitHub
       |
       ▼
-Capture Outcomes
-      |
-      ▼
-Create Handoff
+Create Session Handoff
+(records the exact phase and gate position of each in-flight task)
       |
       ▼
 Session End
 ```
+
+A session ends when the Product Owner requests it, or when the context budget is running low — in the latter case the AI Program Manager must **proactively offer** session end rather than allowing work to degrade.
 
 ---
 
@@ -182,15 +202,21 @@ Important information should be captured before session completion.
 
 ## Session Completion
 
+A session ends when the Product Owner requests it, or proactively when the context budget is running low.
+
 Before ending a session:
+
+1. **Persist all work** — ensure every changed file is saved.
+2. **Commit and push** — commit all changes with a structured message and **push to GitHub**, so no work exists only in the local workspace or the conversation.
+3. **Create the session handoff** — for each in-flight task, record its **exact SDLC phase and gate position**, so the next session resumes mid-workflow without re-deriving state.
 
 Capture:
 
 * Completed work
-* Incomplete work
+* In-flight work (with phase and gate position per task)
 * Decisions made
 * Problems encountered
-* Files changed
+* Files changed, commit reference
 * Next recommended actions
 
 ---
@@ -215,6 +241,11 @@ Project:
 Session Date:
 
 Session Objective:
+
+
+In-Flight Tasks (phase and gate position)
+
+-
 
 
 Completed Work

@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ForgeOS Operations Runbook</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    display: flex;
+}
+
+nav {
+    width: 280px;
+    position: fixed;
+    height: 100vh;
+    overflow-y: auto;
+    background: #1f2937;
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+nav h2 {
+    margin-top: 0;
+    font-size: 1.2em;
+}
+
+nav ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+nav li {
+    margin: 8px 0;
+}
+
+nav a {
+    color: #ddd;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: white;
+}
+
+main {
+    margin-left: 300px;
+    padding: 40px;
+    max-width: 1000px;
+}
+
+h1 {
+    border-bottom: 3px solid #2563eb;
+    padding-bottom: 10px;
+}
+
+h2 {
+    margin-top: 50px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+}
+
+h3 {
+    margin-top: 30px;
+}
+
+pre {
+    background: #1e1e1e;
+    color: #f5f5f5;
+    padding: 15px;
+    border-radius: 6px;
+    overflow-x: auto;
+}
+
+code {
+    font-family: Consolas, monospace;
+}
+
+blockquote {
+    background: #f8f8f8;
+    border-left: 4px solid #2563eb;
+    padding: 10px 20px;
+}
+
+ul {
+    margin-top: 10px;
+}
+
+hr {
+    margin: 50px 0;
+}
+</style>
+
+</head>
+<body>
+
+<nav>
+<h2>Contents</h2>
+
+<ul>
+<li><a href="#purpose">Purpose</a></li>
+<li><a href="#server">Server Information</a></li>
+<li><a href="#repository">Repository</a></li>
+<li><a href="#docker">Docker</a></li>
+<li><a href="#container">Container Operations</a></li>
+<li><a href="#compose">Docker Compose</a></li>
+<li><a href="#networks">Networks</a></li>
+<li><a href="#npm">Nginx Proxy Manager</a></li>
+<li><a href="#portainer">Portainer</a></li>
+<li><a href="#plausible">Plausible</a></li>
+<li><a href="#twingate">Twingate</a></li>
+<li><a href="#apache">Apache</a></li>
+<li><a href="#ports">Ports</a></li>
+<li><a href="#certificates">Certificates</a></li>
+<li><a href="#cloudflare">Cloudflare</a></li>
+<li><a href="#git">Git</a></li>
+<li><a href="#health">System Health</a></li>
+<li><a href="#cleanup">Cleanup</a></li>
+<li><a href="#backup">Backup Checklist</a></li>
+<li><a href="#deployment">Deployment Checklist</a></li>
+<li><a href="#workflow">Standard Deployment Workflow</a></li>
+<li><a href="#rollback">Emergency Rollback</a></li>
+<li><a href="#commands">Useful Commands</a></li>
+<li><a href="#future">Future Procedures</a></li>
+<li><a href="#philosophy">Operational Philosophy</a></li>
+</ul>
+
+</nav>
+
+<main>
+
+<h1>ForgeOS Operations Runbook</h1>
+
+<p><strong>Version:</strong> 1.0<br>
+<strong>Status:</strong> Active<br>
+<strong>Last Updated:</strong> 2026-07-19</p>
+
+<h2 id="purpose">Purpose</h2>
+
+<p>
+The Operations Runbook provides the day-to-day operational procedures for managing
+the Forge Sitesmiths production infrastructure.
+</p>
+
+<p>
+Unlike the architecture and standards documentation, this document focuses on
+<strong>how to perform common operational tasks.</strong>
+</p>
+
+<p>
+It should contain repeatable procedures that can be followed without relying on memory.
+</p>
+
+<hr>
+
+<h2 id="server">Server Information</h2>
+
+<h3>Production VPS</h3>
+
+<p><strong>Git repositories</strong></p>
+
+<pre><code>/opt/repos</code></pre>
+
+<p><strong>Runtime services</strong></p>
+
+<pre><code>/opt/services</code></pre>
+
+<hr>
+
+<h2 id="repository">Repository</h2>
+
+<p>Infrastructure repository</p>
+
+<pre><code>/opt/repos/forge-sitesmiths</code></pre>
+
+<p>Update repository</p>
+
+<pre><code>cd /opt/repos/forge-sitesmiths
+git pull</code></pre>
+
+<p>Check repository status</p>
+
+<pre><code>git status</code></pre>
+
+<hr>
+
+<h2 id="docker">Docker</h2>
+
+<h3>Docker Version</h3>
+
+<pre><code>docker version</code></pre>
+
+<h3>Docker Compose Version</h3>
+
+<pre><code>docker compose version</code></pre>
+
+<h3>Running Containers</h3>
+
+<pre><code>docker ps</code></pre>
+
+<h3>All Containers</h3>
+
+<pre><code>docker ps -a</code></pre>
+
+<h3>Images</h3>
+
+<pre><code>docker images</code></pre>
+
+<h3>Networks</h3>
+
+<pre><code>docker network ls</code></pre>
+
+<h3>Volumes</h3>
+
+<pre><code>docker volume ls</code></pre>
+
+<hr>
+
+<h2 id="container">Container Operations</h2>
+
+<h3>View Logs</h3>
+
+<pre><code>docker logs &lt;container&gt;</code></pre>
+
+<p>Example</p>
+
+<pre><code>docker logs portainer</code></pre>
+
+<h3>Follow Logs</h3>
+
+<pre><code>docker logs -f &lt;container&gt;</code></pre>
+
+<h3>Restart Container</h3>
+
+<pre><code>docker restart &lt;container&gt;</code></pre>
+
+<h3>Stop Container</h3>
+
+<pre><code>docker stop &lt;container&gt;</code></pre>
+
+<h3>Start Container</h3>
+
+<pre><code>docker start &lt;container&gt;</code></pre>
+
+<h3>Remove Container</h3>
+
+<pre><code>docker rm &lt;container&gt;</code></pre>
+
+<h3>Inspect Container</h3>
+
+<pre><code>docker inspect &lt;container&gt;</code></pre>
+
+<hr>
+
+<h2 id="compose">Docker Compose</h2>
+
+<pre><code>docker compose up -d
+
+docker compose down
+
+docker compose pull
+
+docker compose logs
+
+docker compose logs -f</code></pre>
+
+<hr>
+
+<h2 id="networks">Networks</h2>
+
+<pre><code>docker network inspect nb-public</code></pre>
+
+<hr>
+
+<h2 id="npm">Nginx Proxy Manager</h2>
+
+<p><strong>Runtime Directory</strong></p>
+
+<pre><code>/opt/services/infrastructure/nginx-proxy-manager</code></pre>
+
+<p><strong>Compose</strong></p>
+
+<pre><code>/opt/repos/forge-sitesmiths/compose/infrastructure/nginx-proxy-manager</code></pre>
+
+<p><strong>Deploy</strong></p>
+
+<pre><code>cd /opt/repos/forge-sitesmiths/compose/infrastructure/nginx-proxy-manager
+
+docker compose up -d</code></pre>
+
+<p><strong>Restart</strong></p>
+
+<pre><code>docker restart nginx-proxy-manager</code></pre>
+
+<p><strong>Logs</strong></p>
+
+<pre><code>docker logs nginx-proxy-manager</code></pre>
+
+<hr>
+
+<h2 id="portainer">Portainer</h2>
+
+<pre><code>Runtime:
+/opt/services/infrastructure/portainer
+
+Compose:
+/opt/repos/forge-sitesmiths/compose/infrastructure/portainer
+
+docker compose up -d
+
+docker restart portainer
+
+docker logs portainer</code></pre>
+
+<hr>
+
+<h2 id="plausible">Plausible</h2>
+
+<pre><code>docker ps | grep plausible
+
+/opt/repos/forge-sitesmiths/compose/monitoring/plausible</code></pre>
+
+<hr>
+
+<h2 id="twingate">Twingate</h2>
+
+<pre><code>systemctl status twingate-connector
+
+sudo systemctl restart twingate-connector
+
+journalctl -u twingate-connector -f</code></pre>
+
+<hr>
+
+<h2 id="apache">Apache</h2>
+
+<pre><code>systemctl status apache2
+
+sudo systemctl restart apache2
+
+sudo systemctl stop apache2
+
+sudo systemctl start apache2</code></pre>
+
+<hr>
+
+<h2 id="ports">Ports</h2>
+
+<pre><code>ss -tulpn
+
+sudo lsof -i :80
+
+sudo lsof -i :443</code></pre>
+
+<hr>
+
+<h2 id="certificates">Certificates</h2>
+
+<pre><code>/opt/services/shared/certs
+
+ls -lah /opt/services/shared/certs</code></pre>
+
+<hr>
+
+<h2 id="cloudflare">Cloudflare</h2>
+
+<pre><code>nslookup domain.com
+
+curl -I https://domain.com</code></pre>
+
+<hr>
+
+<h2 id="git">Git</h2>
+<h3>📂 Terminal Navigation & File Operations</h3>
+<pre><code>pwd                 # Print working directory
+ls -a               # List all files, including hidden ones
+cd &lt;path&gt;           # Change directory
+cd ..               # Move up one directory
+mkdir &lt;name&gt;        # Create a directory
+touch &lt;file&gt;        # Create an empty file
+rm -r &lt;dir&gt;         # Remove a directory recursively
+clear               # Clear the terminal
+:wq                 # Save and quit Vim
+</code></pre>
+
+<h3>⚙️ Git Configuration</h3>
+<pre><code>git config --global user.name "Name"                 # Set your commit username.
+git config --global user.email "email"                 # Set your commit email.
+git config --global color.ui auto                 # Enable colored terminal output
+</code></pre>    
+
+<h3>📝 Tracking & Committing Changes</h3>
+<pre><code>
+git status                 # Show tracked, untracked, and staged files.
+git diff                 # View unstaged changes in your files.
+git add &lt;file&gt;                 # Stage a specific file for commit.
+git add .                 # Stage all file changes in directory.
+git commit -m "msg"                 # Commit staged changes with message.
+git commit -am "msg"                 # Stage and commit tracked files directly.
+git commit --amend                 # Modify the most recent commit
+</code></pre>      
+    
+<hr>
+
+<h2 id="health">System Health</h2>
+
+<pre><code>df -h
+
+free -h
+
+top
+
+docker system df</code></pre>
+
+<hr>
+
+<h2 id="cleanup">Cleanup</h2>
+
+<pre><code>docker image prune
+
+docker container prune
+
+docker network prune
+
+docker system prune</code></pre>
+
+<p><strong>Use with care.</strong></p>
+
+<hr>
+
+<h2 id="backup">Backup Checklist</h2>
+
+<ul>
+<li>Backup application files</li>
+<li>Backup database</li>
+<li>Verify backup exists</li>
+<li>Verify restore procedure</li>
+<li>Record backup location</li>
+</ul>
+
+<hr>
+
+<h2 id="deployment">Deployment Checklist</h2>
+
+<h3>Before Deployment</h3>
+
+<ul>
+<li>Git clean</li>
+<li>Documentation updated</li>
+<li>Rollback prepared</li>
+<li>Runtime directories created</li>
+</ul>
+
+<h3>Deploy</h3>
+
+<ul>
+<li>Pull latest repository</li>
+<li>Deploy compose</li>
+<li>Check logs</li>
+<li>Validate networking</li>
+<li>Configure NPM</li>
+<li>Configure Cloudflare</li>
+<li>Test</li>
+</ul>
+
+<h3>After Deployment</h3>
+
+<ul>
+<li>Update documentation</li>
+<li>Commit changes</li>
+<li>Monitor logs</li>
+</ul>
+
+<hr>
+
+<h2 id="workflow">Standard Deployment Workflow</h2>
+
+<h3>Local Machine</h3>
+
+<pre><code>git add .
+
+git commit -m "Description"
+
+git push origin main</code></pre>
+
+<h3>VPS</h3>
+
+<pre><code>cd /opt/repos/forge-sitesmiths
+
+git fetch origin
+
+git status
+
+git rev-parse HEAD
+
+git rev-parse origin/main
+
+git branch -vv
+
+git log --oneline --graph --decorate --all --max-count=15
+
+git pull
+
+docker compose up -d</code></pre>
+
+<h3>Verify</h3>
+
+<pre><code>git status
+
+docker ps</code></pre>
+
+<blockquote>
+Your branch is up to date with 'origin/main'.
+</blockquote>
+
+<hr>
+
+<h2 id="rollback">Emergency Rollback</h2>
+
+<pre><code>docker compose down
+
+git checkout &lt;commit&gt;
+
+docker compose up -d</code></pre>
+
+<p>Restore backups if required and validate the deployment.</p>
+
+<hr>
+
+<h2 id="commands">Useful Commands</h2>
+
+<pre><code>find /opt/repos/forge-sitesmiths -name compose.yml
+
+find /opt/services -maxdepth 2 -type d
+
+du -sh /opt/services/*
+
+systemctl --type=service --state=running</code></pre>
+
+<hr>
+
+<h2 id="future">Future Procedures</h2>
+
+<ul>
+<li>Deploy a new application</li>
+<li>Deploy a new WordPress site</li>
+<li>Upgrade Docker Engine</li>
+<li>Upgrade Portainer</li>
+<li>Upgrade Nginx Proxy Manager</li>
+<li>Restore a WordPress site</li>
+<li>Restore a MariaDB database</li>
+<li>Restore PostgreSQL</li>
+<li>Restore ClickHouse</li>
+<li>Cloudflare certificate replacement</li>
+<li>Server recovery after reboot</li>
+<li>Disaster recovery</li>
+<li>Full server rebuild</li>
+<li>Monitoring and alerting</li>
+<li>Backup verification</li>
+</ul>
+
+<hr>
+
+<h2 id="philosophy">Operational Philosophy</h2>
+
+<p>The runbook should always reflect the current production environment.</p>
+
+<ol>
+<li>Update the infrastructure.</li>
+<li>Test the procedure.</li>
+<li>Update this Runbook.</li>
+<li>Commit the documentation.</li>
+</ol>
+
+<p><strong>A runbook that is not maintained cannot be relied upon during an incident.</strong></p>
+
+</main>
+
+</body>
+</html>

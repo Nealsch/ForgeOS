@@ -46,19 +46,15 @@ Development agents support defect investigation and resolution but do not determ
 
 # Primary Skills
 
-The QA Engineer may utilise skills including:
+The QA Engineer may utilise ForgeOS Skills including:
 
-* Test Planning
-* Test Case Design
-* Functional Testing
-* Integration Testing
-* End-to-End Testing
-* Regression Testing
-* Performance Testing
-* Security Validation
-* Defect Management
-* Test Reporting
-* Release Readiness Assessment
+* `Forge-Test-Strategy`
+* `Forge-Test-Planning`
+* `Forge-Security-Surface-Review`
+* `Forge-Code-Review`
+* `Forge-Debugging`
+
+Skills required by this phase that are not yet in the catalogue (Test Execution and Reporting, Defect Management, Regression Testing, Performance Testing, Release Readiness Assessment) are tracked in the ForgeOS Project backlog (see WI-001).
 
 ---
 

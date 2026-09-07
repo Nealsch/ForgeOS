@@ -48,19 +48,12 @@ The Architect provides guidance for significant operational or architectural iss
 
 # Primary Skills
 
-The DevOps Engineer may utilise skills including:
+The DevOps Engineer may utilise ForgeOS Skills including:
 
-* Production Monitoring
-* Incident Management
-* Log Analysis
-* Infrastructure Management
-* Backup and Recovery
-* Performance Monitoring
-* Capacity Planning
-* Security Monitoring
-* Operational Support
-* Root Cause Analysis
-* Change Management
+* `Forge-Debugging`
+* `Forge-Documentation-Generation`
+
+The Skills catalogue has no Delivery category, so the majority of this phase's required capabilities — Production Monitoring, Incident Management, Log Analysis, Infrastructure Management, Backup and Recovery, Performance Monitoring, Capacity Planning, Security Monitoring, Root Cause Analysis and Change Management — are **catalogue gaps** tracked in the ForgeOS Project backlog (see WI-001).
 
 ---
 

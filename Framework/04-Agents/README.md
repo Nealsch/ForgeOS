@@ -210,22 +210,24 @@ Example:
 ```text
 agents/
 
-    backend-engineer/
+    Backend Engineer/
 
         README.md
 
-    architect/
+    Architect/
 
         README.md
 
-    qa-engineer/
+    QA Engineer/
 
         README.md
 
-    security-engineer/
+    Security Engineer/
 
         README.md
 ```
+
+Agent directories use **Title Case**, matching the agent catalogue in this repository.
 
 Each agent directory contains the documentation required to define that engineering role within the ForgeOS Framework.
 

@@ -47,20 +47,17 @@ The Product Manager remains available to clarify requirements but does not influ
 
 # Primary Skills
 
-The Architect may utilise skills including:
+The Architect may utilise ForgeOS Skills including:
 
-* Solution Architecture
-* System Architecture
-* Domain Modelling
-* API Design
-* Database Design
-* Integration Design
-* Technology Evaluation
-* Architectural Decision Records (ADR)
-* Threat Modelling
-* Scalability Planning
-* Performance Planning
-* Risk Assessment
+* `Forge-Solution-Architecture`
+* `Forge-Architecture-Analysis`
+* `Forge-Data-Modelling`
+* `Forge-API-Design`
+* `Forge-Integration-Design`
+* `Forge-Architecture-Decision-Records`
+* `Forge-Threat-Modelling`
+
+Skills required by this phase that are not yet in the catalogue (Technology Evaluation, Scalability and Performance Planning, Risk Assessment) are tracked in the ForgeOS Project backlog (see WI-001).
 
 ---
 

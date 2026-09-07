@@ -1,6 +1,6 @@
 | Term                        | Definition                                                                        |
 | --------------------------- | --------------------------------------------------------------------------------- |
-| Product Owner               | Human responsible for business outcomes, priorities and approvals.                |
+| Product Owner               | The human authority who owns business outcomes, priorities and approvals; also the business owner of the project. See `Framework/11-Collaboration Orchestration/Product-Owner.md`. |
 | AI Program Manager          | Persistent AI collaborator that manages software delivery using ForgeOS.          |
 | Collaboration Orchestration | The framework capability that determines how engineering work is executed.        |
 | Work Item                   | The fundamental unit of engineering work in ForgeOS, independent of any external tracking platform. |
@@ -24,3 +24,5 @@
 | Graphify                    | The first preferred implementation of the Codebase Analysis Capability; an external tool, not a ForgeOS concept. Profiled in the Tooling layer (ADR-008). |
 | Architecture Assessment     | A Framework artefact (template under `07-Templates/02-Architecture/`) capturing the current-state structure, dependencies, risks and debt of an existing codebase, produced by the Codebase Analyst. |
 | Adapter Boundary            | The discipline that keeps tool-specific mechanics (graph build, extraction, MCP serving) in the Tooling layer and engineering interpretation in the Framework. |
+| Exit Criteria               | The measurable conditions that must be satisfied for an SDLC phase to be considered complete. |
+| Quality Gate                | The formal review at the end of an SDLC phase that verifies the phase's Exit Criteria have been met before work proceeds to the next phase. |

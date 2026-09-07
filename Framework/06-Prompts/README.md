@@ -37,7 +37,20 @@ Prompts **support** Skills. They are not a replacement for Skills, and they do n
 
 ## Contents
 
-This folder is currently a placeholder. As prompt assets are introduced, they should be organised to mirror the Skill category structure where practical:
+This folder is an **intentional placeholder**. It is not empty by omission: prompts are added only when a Skill genuinely requires one.
+
+### Admission Criteria
+
+A prompt asset may be added only when:
+
+* It implements a defined step in an existing, Active Skill.
+* The step involves AI invocation whose wording materially affects outcome quality.
+* The prompt is reusable across projects and platforms.
+* No existing Skill text already covers the interaction adequately.
+
+Prompts must **not** be created speculatively. Until a Skill requires one, this folder stays empty by design. Demand for prompt assets is tracked in the ForgeOS Project backlog (see WI-001).
+
+As prompt assets are introduced, they should be organised to mirror the Skill category structure where practical:
 
 * `01-Product/`
 * `02-Architecture/`

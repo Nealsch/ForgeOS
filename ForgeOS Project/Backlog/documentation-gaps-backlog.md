@@ -202,6 +202,15 @@ All files under `Framework/07-Templates/09-Project Template/` are zero-byte temp
 
 ---
 
+## Post-v1.0.0
+
+| # | Path | Status | Notes |
+| --- | --- | --- | --- |
+| 82 | `Framework/06-Prompts/` | ✅ Completed | Declared an **intentional placeholder** with admission criteria (WI-001, Decision #9). Prompts are added only when an Active Skill requires one. |
+| 83 | `Framework/11-Collaboration Orchestration/Product-Owner.md` | ✅ Completed | New role definition authored — Product Owner as business owner, rights incl. proactive notification duty (WI-001, Decision #7). |
+
+---
+
 ## Status Values
 
 `Open` → `In Progress` → `Completed` → `Verified` → `Closed`

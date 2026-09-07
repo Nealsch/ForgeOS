@@ -22,7 +22,7 @@ Each framework component has a single responsibility:
 | Agents                      | Define **who** is responsible for specialist engineering work.                     |
 | Skills                      | Define **how** work is performed.                                                   |
 | Standards                   | Define the engineering rules and quality expectations.                              |
-| Governance                  | Defines project-specific constraints and behavioural rules.                         |
+| Governance                  | Applies uniform lifecycle control (change, release, version, compatibility).        |
 | Templates                   | Define the standard structure for new projects.                                     |
 | Collaboration Orchestration | Coordinates how engineering intent is transformed into coordinated execution.        |
 

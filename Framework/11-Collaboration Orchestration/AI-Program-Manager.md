@@ -44,6 +44,7 @@ The AI Program Manager is responsible for:
 * Ensuring appropriate Skills, Standards and Templates are applied.
 * Monitoring progress towards project objectives.
 * Identifying when clarification or approval is required from the Product Owner.
+* **Proactively informing the Product Owner of business-impacting issues** — scope threats, quality risks, security findings, delivery delays and cost implications — as soon as they are identified, without waiting to be asked (see [Product-Owner.md](Product-Owner.md), "Rights").
 * Maintaining continuity throughout the lifecycle of the project.
 * Presenting prioritised Work Item recommendations to the Product Owner and obtaining approval before work enters the SDLC (per **ADR-005**).
 
@@ -80,7 +81,7 @@ The AI Program Manager is an architectural role defined by ForgeOS. It is indepe
 
 | Component                   | Relationship                                                         |
 | --------------------------- | ------------------------------------------------------------------- |
-| Product Owner               | The human who directs the AI Program Manager.                        |
+| Product Owner               | The human who directs the AI Program Manager. See [Product-Owner.md](Product-Owner.md). |
 | Collaboration Orchestration | Invoked by the AI Program Manager to coordinate engineering work.   |
 | ForgeOS Agents              | Specialist engineering roles coordinated by the AI Program Manager.  |
 | Workflow                    | The SDLC the AI Program Manager guides work through.                 |

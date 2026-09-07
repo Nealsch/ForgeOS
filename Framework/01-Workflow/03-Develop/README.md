@@ -49,20 +49,19 @@ The Architect provides technical guidance throughout development but should only
 
 # Primary Skills
 
-Development agents may utilise skills including:
+Development agents may utilise ForgeOS Skills including:
 
-* Feature Implementation
-* Refactoring
-* Code Review
-* Unit Testing
-* Integration Testing
-* API Development
-* Database Development
-* UI Development
-* Performance Optimisation
-* Secure Coding
-* Documentation
-* Debugging
+* `Forge-Backend-Development`
+* `Forge-Frontend-Development`
+* `Forge-API-Design`
+* `Forge-Database-Implementation`
+* `Forge-Refactoring`
+* `Forge-Code-Review`
+* `Forge-Debugging`
+* `Forge-Standards-Compliance`
+* `Forge-Documentation-Generation`
+
+Skills required by this phase that are not yet in the catalogue (Automated Test Authoring, Performance Optimisation, Secure Coding) are tracked in the ForgeOS Project backlog (see WI-001).
 
 ---
 
