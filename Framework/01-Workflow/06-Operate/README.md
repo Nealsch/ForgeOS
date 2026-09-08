@@ -52,8 +52,14 @@ The DevOps Engineer may utilise ForgeOS Skills including:
 
 * `Forge-Debugging`
 * `Forge-Documentation-Generation`
+* `Forge-Production-Monitoring`
+* `Forge-Incident-Management`
+* `Forge-Log-Analysis`
+* `Forge-Infrastructure-Management`
+* `Forge-Backup-and-Recovery`
+* `Forge-Operational-Change-Management`
 
-The Skills catalogue has no Delivery category, so the majority of this phase's required capabilities — Production Monitoring, Incident Management, Log Analysis, Infrastructure Management, Backup and Recovery, Performance Monitoring, Capacity Planning, Security Monitoring, Root Cause Analysis and Change Management — are **catalogue gaps** tracked in the ForgeOS Project backlog (see WI-001).
+These are the Operations category skills (`05-Skills/09-Operations/`). Security Monitoring is owned by the `05-Security` category (backlog gap #8).
 
 ---
 

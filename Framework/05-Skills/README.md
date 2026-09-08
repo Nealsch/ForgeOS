@@ -298,21 +298,19 @@ Examples:
 
 ## 06-Delivery
 
-Defines capabilities used to release and operate software.
+Defines capabilities used to release software into production.
 
 Examples:
 
-* Deployment Engineering
+* Build Automation
+* CI/CD Pipeline Execution
 * Release Management
-* Continuous Integration
-* Continuous Deployment
-* Infrastructure Management
+* Version Management
+* Infrastructure as Code
+* Environment Configuration
+* Rollback Planning
+* Deployment Verification
 * Operational Readiness
-* Monitoring
-* Logging
-* Alerting
-* Backup and Recovery
-* Configuration Management
 
 Technology-specific capabilities such as Docker, Kubernetes or Cloud platforms should be represented through Technology Profiles or Project Documentation.
 
@@ -351,6 +349,26 @@ Examples:
 * Prompt Engineering
 * AI Limitation Assessment
 * Agent Collaboration
+
+---
+
+## 09-Operations
+
+Defines capabilities used to operate software reliably in production.
+
+Examples:
+
+* Production Monitoring
+* Performance Monitoring
+* Capacity Planning
+* Incident Management
+* Root Cause Analysis
+* Log Analysis
+* Infrastructure Management
+* Backup and Recovery
+* Operational Change Management
+
+Security monitoring and security incident response are owned by the 05-Security category.
 
 ---
 

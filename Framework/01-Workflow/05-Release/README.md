@@ -50,8 +50,15 @@ The DevOps Engineer may utilise ForgeOS Skills including:
 
 * `Forge-Standards-Compliance`
 * `Forge-Documentation-Generation`
+* `Forge-Build-Automation`
+* `Forge-CI-CD-Pipeline-Execution`
+* `Forge-Release-Management`
+* `Forge-Infrastructure-as-Code`
+* `Forge-Rollback-Planning`
+* `Forge-Deployment-Verification`
+* `Forge-Operational-Readiness`
 
-The Skills catalogue currently has no Delivery category (`05-Skills/06-Delivery/` is empty), so the majority of this phase's required capabilities — Build Automation, Release Management, CI/CD Pipeline Execution, Infrastructure as Code, Environment Configuration, Version Management, Rollback Planning, Deployment Verification and Operational Readiness — are **catalogue gaps** tracked in the ForgeOS Project backlog (see WI-001).
+These are the Delivery category skills (`05-Skills/06-Delivery/`). Security Monitoring is owned by the `05-Security` category (backlog gap #8).
 
 ---
 

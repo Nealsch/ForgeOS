@@ -22,8 +22,8 @@ This backlog follows the ForgeOS Work Item lifecycle (Imported → Validated →
 
 | # | Phase | Missing Skill / Capability | Priority | Status | Notes |
 | --- | --- | --- | --- | --- | --- |
-| 1 | Release, Operate | Delivery category is empty (`05-Skills/06-Delivery/`) — Build Automation, Release Management, CI/CD Pipeline Execution, Infrastructure as Code, Environment Configuration, Version Management, Rollback Planning, Deployment Verification, Operational Readiness | 🔴 Critical | Open | Two full phases have almost no catalogue coverage. |
-| 2 | Operate | Production Monitoring, Incident Management, Log Analysis, Infrastructure Management, Backup and Recovery, Performance Monitoring, Capacity Planning, Security Monitoring, Root Cause Analysis, Change Management | 🔴 Critical | Open | Overlaps gap #1 (Delivery category). |
+| 1 | Release, Operate | Delivery category is empty (`05-Skills/06-Delivery/`) — Build Automation, Release Management, CI/CD Pipeline Execution, Infrastructure as Code, Environment Configuration, Version Management, Rollback Planning, Deployment Verification, Operational Readiness | 🔴 Critical | Closed | Closed 2026-09-08 via WI-003: category populated with 7 skills (consolidated from 9 capabilities — Version Management inside Forge-Release-Management, Environment Configuration inside Forge-Infrastructure-as-Code). |
+| 2 | Operate | Production Monitoring, Incident Management, Log Analysis, Infrastructure Management, Backup and Recovery, Performance Monitoring, Capacity Planning, Security Monitoring, Root Cause Analysis, Change Management | 🔴 Critical | Closed | Closed 2026-09-08 via WI-003: NEW `05-Skills/09-Operations/` category with 6 skills (consolidated from 10 capabilities — Performance Monitoring + Capacity Planning inside Forge-Production-Monitoring, Root Cause Analysis inside Forge-Incident-Management). Security Monitoring deferred to gap #8 (`05-Security/`). |
 | 3 | Verify | Test Execution and Reporting, Defect Management, Regression Testing, Performance Testing, Release Readiness Assessment | 🟠 High | Open | Only Test Strategy/Planning and Security-Surface-Review exist. |
 | 4 | Develop | Automated Test Authoring, Performance Optimisation, Secure Coding | 🟠 High | Open | `Forge-Performance-Optimisation` named in AGENTS.md examples but not in catalogue. |
 | 5 | Specify | Scope Definition, Risk Assessment, Glossary Management | 🟡 Medium | Open | Product/Skills categories partially cover. |
@@ -36,7 +36,7 @@ This backlog follows the ForgeOS Work Item lifecycle (Imported → Validated →
 
 ## Recommended Order
 
-1. Populate the **Delivery category** (gaps #1–#2) — unblocks Release and Operate phases.
+1. ~~Populate the **Delivery category** (gaps #1–#2) — unblocks Release and Operate phases.~~ **Done** (WI-003, 2026-09-08).
 2. Expand **Quality** (gap #3) — completes the Verify phase.
 3. Add **Develop** coding-phase skills (gap #4).
 4. Expand **Security** (gap #8).

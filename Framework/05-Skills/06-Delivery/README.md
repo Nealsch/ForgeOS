@@ -2,28 +2,24 @@
 
 ## Purpose
 
-Delivery Skills define the capabilities used to release and operate software.
+Delivery Skills define the capabilities used to release software into production.
 
-These Skills cover deployment engineering, release management, continuous integration, continuous deployment, infrastructure management, operational readiness, monitoring, logging, alerting, backup and recovery, and configuration management.
+These Skills cover build automation, continuous integration and delivery, release management, infrastructure as code, rollback planning, deployment verification and operational readiness.
+
+Operational run-the-system capabilities (monitoring, incident response, logging, backup and recovery, operational change management) live in the `09-Operations` category.
 
 ---
 
 ## Skills
 
-*Reserved for future skill definitions.*
-
-The following capabilities are planned for this category:
-
-* Deployment Engineering
-* Release Management
-* Continuous Integration
-* Continuous Deployment
-* Infrastructure Management
-* Operational Readiness
-* Monitoring
-* Logging
-* Alerting
-* Backup and Recovery
-* Configuration Management
+| Skill | Purpose |
+| ----- | ------- |
+| Forge-Build-Automation | Repeatable, scripted, reproducible builds producing versioned artefacts. |
+| Forge-CI-CD-Pipeline-Execution | Pipeline stage design, gating strategy and failure triage from commit to deployable artefact. |
+| Forge-Release-Management | Release planning, Semantic Versioning, release records, approval routing and version-pointer hygiene. |
+| Forge-Infrastructure-as-Code | Declarative infrastructure and environment configuration with parity, promotion and drift control. |
+| Forge-Rollback-Planning | Credible, rehearsed, documented rollback paths for every deployment. |
+| Forge-Deployment-Verification | Post-deployment smoke verification with recorded evidence feeding the go/no-go. |
+| Forge-Operational-Readiness | Evidence-based readiness assessment and operational handover packaging. |
 
 Technology-specific capabilities such as Docker, Kubernetes or Cloud platforms should be represented through Governance or Technology Profiles.
