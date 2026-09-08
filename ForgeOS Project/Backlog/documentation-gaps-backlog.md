@@ -184,7 +184,7 @@ All files under `Framework/07-Templates/09-Project Template/` are zero-byte temp
 | 🟠 High | 14 | ✅ All resolved (13 authored, 1 removed — Roo discontinued). |
 | 🟡 Medium | 5 | ✅ All completed — ForgeOS application guides (OWASP = goal, ForgeOS = implementation). |
 | 🟢 Low | 35 | ✅ All completed — YAML frontmatter (purpose, when_used, produced_by, consumed_by, category, template_type, framework_authority) added to each slot, cross-linked to Framework authority. |
-| 📁 Folder (Framework/Project) | 8 | Add README or content. |
+| 📁 Folder (Framework/Project) | 8 | Add README or content. **Open — tracked as [issue #7](https://github.com/Nealsch/ForgeOS/issues/7).** |
 | 📁 Folder (Project Template) | 9 | ✅ All completed — `.gitkeep` added to 9 genuinely-empty structural dirs. |
 | **Total** | **81** | **All resolved — v1.0.0 released.** |
 
@@ -198,7 +198,7 @@ All files under `Framework/07-Templates/09-Project Template/` are zero-byte temp
 4. ~~Resolve the **OWASP standards placeholders** (5 items) — decide populate-vs-pointer policy first.~~ ✅ Done — Option A (ForgeOS application guides, OWASP linked as canonical goal).
 5. ~~Fill **Project Template placeholders** with instruction comments (35 items) — template-quality pass.~~ ✅ Done — YAML frontmatter with Framework cross-links.
 6. ~~Add **`.gitkeep`** files (9 items) — version-control hygiene.~~ ✅ Done.
-7. Address **Framework/Project empty directories** (8 items) — fill or remove as appropriate.
+7. Address **Framework/Project empty directories** (8 items) — fill or remove as appropriate. Tracked as [issue #7](https://github.com/Nealsch/ForgeOS/issues/7).
 
 ---
 

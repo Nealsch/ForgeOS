@@ -7,7 +7,7 @@
 | Work Item ID | WI-005 |
 | Title | Refresh `forgeos-explainer.png` to reflect current Framework structure |
 | Work Item Type | Maintenance / Documentation |
-| Status | Imported |
+| Status | Imported — tracked publicly as [GitHub issue #8](https://github.com/Nealsch/ForgeOS/issues/8) |
 
 ## Origin
 
@@ -92,6 +92,7 @@ provided or the diagram rebuilt.
 
 ## Related
 
+* [GitHub issue #8](https://github.com/Nealsch/ForgeOS/issues/8) — public tracking
 * `ForgeOS Project/Assets/Diagrams/forgeos-explainer.png` — the asset under review
 * `ForgeOS Project/Assets/Diagrams/README.md` — diagram index (missing source-file row, Q2)
 * AGENTS.md — Engineering Guidance Hierarchy (Governance layer) and repository structure

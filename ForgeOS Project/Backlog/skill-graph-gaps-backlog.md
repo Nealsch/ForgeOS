@@ -121,6 +121,8 @@ For each item, choose one:
 
 > **Decision log (v1.0.1):** All 15 left as-is per Product Owner direction. This backlog exists so the decision is explicit and revisitable, not implicit.
 
+> **GitHub tracking:** this backlog is tracked publicly as [issue #5](https://github.com/Nealsch/ForgeOS/issues/5).
+
 ---
 
 ## Recommended Order
