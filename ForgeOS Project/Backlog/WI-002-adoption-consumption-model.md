@@ -7,7 +7,7 @@
 | Work Item ID | WI-002 |
 | Title | Define how projects consume the Framework: deployment/binding model, bootstrap procedure, folder-structure policy, and the existing-codebase adoption path |
 | Work Item Type | Feature / Technical Debt |
-| Status | In SDLC — Design complete (ADR-009 accepted; design blueprint authored 2026-09-08) — awaiting Product Owner Design Gate review |
+| Status | In SDLC — Develop complete (all FR-1…FR-7 implemented 2026-09-08; G3 audit closed) — awaiting Product Owner Quality Gate review |
 
 ## Origin
 

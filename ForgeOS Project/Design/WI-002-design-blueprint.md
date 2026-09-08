@@ -37,7 +37,17 @@ Design rule: each requirement is realised in exactly one owning artifact; other 
 
 ## G3 Audit — Project Template Platform Configs vs WI-001 Runtime Patterns
 
-**Status: Pending — to be executed at the start of Develop.** The audit will compare `.ai`/`.github`/`.vscode` contents in `Framework/07-Templates/09-Project Template/` against the `.clinerules/context-loading.md`, `response-format.md`, `tool-preferences.md` patterns and record: aligned / deviation+rationale / action required, per file.
+**Status: Complete (2026-09-08).**
+
+| Area | Finding | Classification | Action |
+|------|---------|----------------|--------|
+| `.ai/` (knowledge, sessions, prompts, cache) | Structural slots with framework_authority frontmatter pointing at Framework Skills/templates — same pattern as WI-001 runtime configs (adapt, never replace authority). | Aligned | None |
+| `.github/workflows/README.md` | Placeholder slot; no workflow logic shipping framework behaviour. | Aligned | None |
+| `.vscode/` (`.gitkeep`) | Intentionally empty; per-platform need only. | Aligned (optional piece per canonical matrix) | None |
+| Template `AGENTS.md` slot | Was a bare slot with no pointer to the WI-001 runtime-config patterns or the ADR-009 sibling-clone resolution path. | **Deviation** | Fixed — slot now carries adaptation guidance: runtime configs link to Framework authority; Framework references resolve via the Framework Binding pin (`docs/PROJECT-DEFINITION.md`). |
+| `docs/PROJECT-DEFINITION.md` | Had no binding/version-pin record (gap G4/FR-2). | **Deviation** | Fixed — "Framework Binding" block added (tag, pin date, upgrade history). |
+
+Deviations are closed in Develop; no structural template changes were required.
 
 ## Security Design
 

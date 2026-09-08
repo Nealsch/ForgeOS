@@ -100,7 +100,8 @@ This folder is currently a placeholder. As onboarding material is introduced, th
 * `README.md` — this file; the index.
 * `introduction.md` — a short, plain-language overview of ForgeOS.
 * `reading-paths.md` — detailed reading paths per role.
-* `first-session.md` — a "first hour with ForgeOS" walkthrough.
+* `first-session.md` — **authored**; the project-creation walkthrough (new project + existing codebase) and the Framework binding/upgrade procedure (ADR-009).
+* `canonical-project-structure.md` — **authored**; the canonical scaffold policy and the mandatory/optional matrix for brownfield adoption.
 * `glossary-overview.md` — a gentle introduction to key terminology.
 
 ---

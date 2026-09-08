@@ -59,6 +59,7 @@ Governance complements Standards. Standards describe how to engineer well; Gover
 | `change-management.md`  | How changes are proposed, classified, reviewed and approved.                             |
 | `release-process.md`    | The authoritative end-to-end release workflow and the gates each release must satisfy.   |
 | `compatibility.md`      | Backward and forward compatibility commitments, deprecation and breaking-change policy.  |
+| `Standards-Applicability.md` | How projects declare scoped legacy-code exemptions that burn down (no requirement relaxation). |
 | `Version/README.md`     | The version-numbering scheme (Semantic Versioning) used across releases.                 |
 
 `release-process.md` is the authoritative source for the release workflow. `Version/README.md` owns only the version-numbering scheme and references the release process; it does not duplicate it.
