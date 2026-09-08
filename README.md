@@ -1,424 +1,224 @@
+<div align="center">
+
 # ForgeOS
 
-> **AI-Assisted Software Development Operating System**
+**The AI-Assisted Software Development Operating System.**
 
-ForgeOS is a standards-driven framework for building software using a structured Software Development Lifecycle (SDLC) that enables humans and AI to work together through a common engineering process.
+A standards-driven engineering framework where humans and AI build software together
+through a shared SDLC — structured, documented, and quality-gated at every phase.
 
-Rather than organising development around prompts or individual AI tools, ForgeOS organises work around the SDLC. AI agents become engineering participants within that process, following defined standards, producing documented deliverables and passing quality gates before progressing.
+[![License][license]](LICENSE)
+[![Latest Release][release]](https://github.com/Nealsch/ForgeOS/releases/latest)
+[![GitHub Stars][stars]](https://github.com/Nealsch/ForgeOS/stargazers)
+[![Forks][forks]](https://github.com/Nealsch/ForgeOS/network/members)
 
-ForgeOS is intentionally platform agnostic and can be integrated with multiple AI coding assistants, IDEs and Large Language Models.
+[![SDLC][sdlc]](#software-development-lifecycle)
+[![AI Platform Agnostic][agnostic]](#tooling-components)
+[![Cline][cline]](#platforms)
+[![Claude Code][claude]](#platforms)
+[![Cursor][cursor]](#platforms)
+[![Codex][codex]](#platforms)
+[![Gemini CLI][gemini]](#platforms)
 
----
-
-# Vision
-
-Create a reusable engineering framework that enables any software project to be developed consistently regardless of:
-
-* AI platform
-* IDE
-* Programming language
-* Technology stack
-* Project size
-
-ForgeOS provides the engineering system.
-
-Projects provide the implementation.
+</div>
 
 ---
 
-# Design Principles
-
-ForgeOS is built on the following principles.
-
-* **SDLC First** – The Software Development Lifecycle is the primary driver of all work.
-* **Standards Driven** – Engineering standards guide implementation.
-* **Platform Independent** – The framework is not tied to any AI vendor or IDE.
-* **Context Before Action** – Existing knowledge is always consulted before engineering work begins.
-* **Human + AI Collaboration** – Humans and AI collaborate through defined engineering roles and responsibilities.
-* **Reusable by Design** – Framework components are designed to be reused across projects.
-* **Separation of Responsibilities** – Every framework component has a single, clearly defined responsibility.
+<p align="center">
+  <a href="#why-forgeos"><strong>Why</strong></a> &nbsp;·&nbsp;
+  <a href="#architecture"><strong>Architecture</strong></a> &nbsp;·&nbsp;
+  <a href="#software-development-lifecycle"><strong>SDLC</strong></a> &nbsp;·&nbsp;
+  <a href="#framework-components"><strong>Components</strong></a> &nbsp;·&nbsp;
+  <a href="#getting-started"><strong>Getting Started</strong></a> &nbsp;·&nbsp;
+  <a href="#who-is-forgeos-for"><strong>Who It's For</strong></a>
+</p>
 
 ---
 
-# Architecture
-
-The ForgeOS repository contains three primary areas.
-
-```text
-ForgeOS
-│
-├── Framework
-├── ForgeOS Project
-└── Tooling
-```
-
-## Framework
-
-The Framework contains the reusable engineering operating system.
-
-```text
-Framework/
-
-Workflow/
-Standards/
-Governance/
-Agents/
-Skills/
-Prompts/
-Templates/
-Examples/
-Onboarding/
-Assets/
-Collaboration Orchestration/
-Glossary/
-```
-
-The Framework defines **how software should be engineered**.
-
-It represents the current, authoritative engineering knowledge used by every ForgeOS project.
+> **Stop prompting. Start engineering.**
+>
+> **The SDLC drives the work. Standards define the quality. Humans and AI follow the same process.**
 
 ---
 
-## ForgeOS Project
+## Why ForgeOS?
 
-The ForgeOS Project contains the living documentation used to develop and evolve the ForgeOS framework itself.
+Most AI-assisted development starts with a prompt and ends with hope. Code appears fast — but without standards, without documentation, without gates, and with no way for a human to review *how* decisions were made.
 
-Unlike the Framework, which contains reusable engineering knowledge, the ForgeOS Project records the decisions, planning and history behind the framework.
+**ForgeOS takes a different path.** It turns AI coding assistants into engineering participants inside a real SDLC, so every change is specified, designed, built, verified and released through a process a human can audit.
 
-Typical contents include:
+- 🔁 **SDLC First** — work is organised around the software development lifecycle, not around prompts or tools.
+- 📏 **Standards Driven** — engineering standards define *how* software is built before any code is written.
+- 🧩 **Platform Independent** — not tied to any AI vendor, IDE, LLM, language or stack.
+- 🧠 **Context Before Action** — existing documentation and knowledge are always consulted before engineering begins.
+- 🤝 **Human + AI Collaboration** — humans and AI follow *exactly the same* process, roles and responsibilities.
+- ♻️ **Reusable by Design** — drop the Framework into any project and adopt the same operating system.
 
-* Architecture Decision Records (ADRs)
-* Product Roadmap
-* Product Backlog
-* Release Notes
-* Other project management artefacts
-
-The ForgeOS Project intentionally remains lightweight.
-
-Its purpose is to document the evolution of ForgeOS without duplicating the reusable engineering knowledge contained within the Framework.
-
----
-
-## Tooling
-
-The Tooling layer provides the integrations that enable ForgeOS to operate across supported AI development platforms.
-
-```text
-Tooling/
-
-Platforms/
-Adapters/
-Capabilities/
-```
-
-The Tooling layer is implementation-specific and independent of the engineering framework.
+| Capability | ForgeOS | Ad-hoc prompting | Governance platforms |
+|---|:--:|:--:|:--:|
+| Structured SDLC with quality gates | ✅ | — | ✅ |
+| AI follows the same process as humans | ✅ | — | — |
+| Works with any AI assistant / IDE / LLM | ✅ | ✅ | — |
+| Standards, templates & glossary included | ✅ | — | — |
+| Reusable across projects & stacks | ✅ | — | — |
+| Owns your process (no SaaS, no lock-in) | ✅ | ✅ | — |
 
 ---
 
-# Software Development Lifecycle
+## Architecture
 
-ForgeOS organises all engineering work into the following lifecycle.
+<p align="center">
+  <img src="ForgeOS%20Project/Assets/Diagrams/forgeos-explainer.png" alt="ForgeOS high-level explainer diagram" width="820" />
+</p>
 
-```text
-Specify
-    ↓
-Design
-    ↓
-Develop
-    ↓
-Verify
-    ↓
-Release
-    ↓
-Operate
-    ↓
-Improve
-    ↺
-```
-
-Each phase contains:
-
-* Purpose
-* Inputs
-* Activities
-* Deliverables
-* Standards
-* Responsible Agents
-* Exit Gate
-
-A phase may only progress once its quality gate has been satisfied.
-
----
-
-# Repository Structure
+ForgeOS separates **reusable engineering knowledge** from **project history** and **platform integration**, so none of the three contaminate the others.
 
 ```text
 ForgeOS/
+│
+├── Framework/         ← the reusable engineering operating system
+├── ForgeOS Project/   ← living docs for evolving ForgeOS itself (ADRs, backlog, roadmap)
+└── Tooling/           ← integrations with AI development platforms
+```
 
-AGENTS.md
-README.md
-LICENSE
+The Framework defines **how software should be engineered** — it is the current, authoritative engineering knowledge used by every ForgeOS project. The ForgeOS Project records the decisions, planning and history behind the framework (ADRs, roadmap, backlog, release notes, scripts) and is intentionally lightweight — it is **not** part of the reusable template. The Tooling layer is implementation-specific and never defines engineering standards.
 
-Framework/
-ForgeOS Project/  <-- this is the folder that contains the living documents for the ForgeOS. This is not part of the re-usable template.>
-Tooling/
-Scripts/
-.clinerules/
+```text
+Framework/                              Tooling/
+
+Workflow/                               Platforms/     ← profiles for supported AI platforms
+Standards/                              Adapters/      ← integration mechanisms
+Governance/                             Capabilities/  ← platform feature compatibility
+Agents/  Skills/  Prompts/  Templates/
+Examples/  Onboarding/  Assets/
+Collaboration Orchestration/  Glossary/
 ```
 
 ---
 
-# Framework Components
+## Software Development Lifecycle
 
-## Workflow
+ForgeOS organises all engineering work into seven phases. A phase only completes when its deliverables exist, its standards are satisfied and its **quality gate** has passed.
 
-Defines when engineering work is performed through the ForgeOS Software Development Lifecycle.
+```text
+Specify → Design → Develop → Verify → Release → Operate → Improve ↺
+```
 
----
+Every phase defines:
 
-## Standards
+| | | |
+|---|---|---|
+| Purpose | Inputs | Activities |
+| Deliverables | Standards | Responsible Agents |
+| Exit Criteria | Quality Gate | |
 
-Define the engineering rules and quality expectations that apply across all projects.
-
-Examples include:
-
-* Coding
-* Architecture
-* Security
-* Testing
-* Documentation
+Because **humans and AI follow the same process**, a reviewer can see exactly which phase a piece of work is in, which agent did it, which standards applied, and which gate it passed — regardless of which AI tool was used.
 
 ---
 
-## Governance
+## Framework Components
 
-Defines governance, compatibility, change management and project-specific or technology-specific constraints that supplement the engineering standards.
+| Component | Responsibility |
+|---|---|
+| **Workflow** | Defines **when** engineering work occurs — the SDLC, phases, gates and deliverables. |
+| **Standards** | Engineering rules and quality expectations: coding, architecture, security, testing, documentation. |
+| **Governance** | Uniform lifecycle control — change, release, version and compatibility — plus project-specific constraints. |
+| **Collaboration Orchestration** | The execution layer: coordinates workflow progression, agent selection, skill selection, standards, templates and context loading. |
+| **Agents** | Specialist engineering roles (Product Manager, Architect, Backend/Frontend/Database/Quality/Security/DevOps Engineer). They perform work — they never own the process. |
+| **Skills** | Reusable engineering capabilities (API Design, Code Review, Test Planning, Threat Modelling…) shared across agents. |
+| **Prompts** | Reusable AI interaction assets. They support Skills but never replace them. |
+| **Templates** | Standard structures for engineering artefacts — including the Project Template that seeds new projects. |
+| **Examples** | Reference implementations and worked examples. |
+| **Onboarding** | How to adopt, extend and contribute to ForgeOS. |
+| **Assets** | Shared diagrams, branding and visual resources. |
+| **Glossary** | One shared vocabulary for humans and AI, across every platform. |
 
----
-
-## Agents
-
-Represent **specialist engineering roles only**.
-
-Agents are responsible for producing engineering outcomes within their discipline. They are invoked by the Collaboration Orchestration layer and coordinated by the AI Program Manager.
-
-Examples include:
-
-* Product Manager
-* Solution Architect
-* Backend Engineer
-* Frontend Engineer
-* Database Engineer
-* Quality Engineer
-* Security Engineer
-* DevOps Engineer
-
-Agents perform specialist engineering work.
-
-They do not manage the overall software project.
+The **AI Program Manager** is the persistent AI collaborator through which the Product Owner interacts with ForgeOS. It invokes Collaboration Orchestration and coordinates specialist Agents — but is *not* an Agent itself and never performs specialist engineering work directly.
 
 ---
 
-## Prompts
+## Tooling Components
 
-Contains reusable prompt assets used by AI-assisted development.
+### Platforms
 
-Prompts standardise interactions with AI models, improving consistency, repeatability and quality across engineering activities.
+Profiles for supported AI development platforms:
 
-Prompts support the execution of Skills but do not replace them.
+![Cline][cline] ![Claude Code][claude] ![Cursor][cursor] ![Codex][codex] ![Gemini CLI][gemini] ![Roo][roo] ![VS Code Agent Mode][vscode]
 
----
+### Adapters
 
-## Skills
+Integration mechanisms that let ForgeOS operate with supported AI platforms.
 
-Provide reusable engineering capabilities that can be applied by one or more Agents.
-
-Examples include:
-
-* API Design
-* Backend Development
-* Database Implementation
-* Code Review
-* Test Planning
-* Threat Modelling
-
----
-
-## Templates
-
-Provide standard structures for producing consistent engineering artefacts.
-A special template to note here is 09-Project Template. This is the folder structure that must seed the initial new projects.
-
----
-
-## Examples
-
-Provide reference implementations demonstrating recommended engineering practices and expected outputs.
-
----
-
-## Collaboration Orchestration
-
-Defines how humans and AI collaborate when applying the ForgeOS framework.
-
-Collaboration Orchestration is the execution layer that transforms human engineering intent into structured engineering execution. It coordinates Workflow progression, Agent selection, Skill selection, Standards loading, Template selection and context loading.
-
-It coordinates:
-
-* Workflow progression
-* Agent selection
-* Skill selection
-* Standards loading
-* Template selection
-* Context loading
-* Engineering execution
-
-The **AI Program Manager** is the persistent AI collaborator through which the Product Owner interacts with ForgeOS. The AI Program Manager invokes Collaboration Orchestration to coordinate specialist ForgeOS Agents. The AI Program Manager is **not** a ForgeOS Agent and does **not** perform specialist engineering activities directly.
-
-Collaboration Orchestration acts as the execution model that connects the Product Owner, AI Program Manager and the ForgeOS framework.
-
----
-
-## Glossary
-
-Defines the terminology used throughout the ForgeOS framework.
-
-The Glossary ensures that human developers, AI agents and contributors share a consistent vocabulary, preventing ambiguity across engineering disciplines and AI platforms.
-
----
-
-## Onboarding
-
-Provides documentation explaining how to adopt, extend and contribute to ForgeOS.
-
----
-
-## Assets
-
-Contains supporting diagrams, branding and other shared visual resources.
-
----
-
-# Tooling Components
-
-## Platforms
-
-Profiles for supported AI development platforms that we call the AI Program Manager
-
-Examples include:
-
-* Cline
-* Claude Code
-* Codex
-* Cursor
-* Gemini CLI
-* Roo
-* VS Code Agent Mode
-
----
-
-## Adapters
-
-Integration mechanisms that allow ForgeOS to operate with supported AI platforms.
-
----
-
-## Capabilities
+### Capabilities
 
 Compatibility information describing the supported features of each AI platform.
 
 ---
 
-# Engineering Philosophy
+## Workspace Layout
 
-ForgeOS separates engineering responsibilities into distinct architectural layers.
-
-| Layer                       | Responsibility                                              |
-| --------------------------- | ----------------------------------------------------------- |
-| Workflow                    | Defines **when** engineering work occurs.                   |
-| Standards                   | Define the engineering rules and quality expectations.      |
-| Governance                  | Defines governance and project-specific constraints.        |
-| Collaboration Orchestration | Coordinates the application of the ForgeOS operating model. |
-| Agents                      | Perform specialist engineering work.                        |
-| Skills                      | Provide reusable engineering capabilities.                  |
-| Prompts                     | Reusable AI interaction assets.                              |
-| Templates                   | Define the structure of engineering artefacts.              |
-| Examples                    | Reference implementations and worked examples.              |
-| Onboarding                  | Learning and adoption resources.                            |
-| Assets                      | Shared supporting resources.                                |
-| Glossary                    | Shared terminology and definitions.                         |
-| Tooling                     | Integrates ForgeOS with AI development platforms.           |
-
-This separation ensures that engineering practices remain independent of implementation technology while maintaining clear responsibilities across the framework.
-
----
-
-# Workspace Layout
-
-ForgeOS is intended to be opened alongside the active software project within a multi-root workspace.
-
-Example:
+ForgeOS is designed to sit **alongside your project** in a multi-root workspace:
 
 ```text
-ForgeOS
-The Project 
+ForgeOS       ← the engineering operating system
+The Project   ← your implementation + project-specific docs
 ```
 
-Within this workspace:
-
-* **ForgeOS** provides the reusable engineering operating system.
-* **The Project** contains the implementation and project-specific documentation.
-
-Together they provide the complete environment for AI-assisted software development.
+Together they form the complete environment for AI-assisted software development.
 
 ---
 
-# Who Is ForgeOS For?
+## Getting Started
 
-ForgeOS is intended for:
-
-* Solo developers
-* AI-assisted software engineers
-* Independent consultants
-* Small software teams
-* Engineering organisations seeking disciplined AI-assisted software development
-
----
-
-# Getting Started
-
-1. Read **AGENTS.md**.
-2. Familiarise yourself with the Framework structure.
-3. Understand the Software Development Lifecycle.
-4. Review the applicable engineering standards.
-5. Configure the appropriate AI development platform.
-6. Open ForgeOS alongside your project within a multi-root workspace.
-7. Begin work in the appropriate SDLC phase.
+1. Read **[AGENTS.md](AGENTS.md)** — the framework's governance and operating rules.
+2. Browse the **Framework** structure above.
+3. Understand the **Software Development Lifecycle** and its quality gates.
+4. Review the applicable **engineering standards**.
+5. Configure your AI development platform via **Tooling/Platforms**.
+6. Open ForgeOS alongside your project in a multi-root workspace.
+7. Start work in the appropriate SDLC phase.
 
 ---
 
-# Guiding Philosophy
+## Who Is ForgeOS For?
 
-ForgeOS is an engineering operating system.
+* 🧑‍💻 **Solo developers** who want AI speed without losing engineering discipline
+* 🤖 **AI-assisted engineers** who need auditable, standards-based AI output
+* 🧑‍💼 **Independent consultants** delivering consistent quality across clients
+* 👥 **Small teams** adopting AI tooling safely
+* 🏢 **Engineering organisations** rolling out disciplined AI-assisted development
 
-The Framework defines the reusable engineering knowledge.
+---
 
-The ForgeOS Project captures the framework's ongoing evolution.
+## Contributing
 
-The Workflow defines when work occurs.
+Contributions are welcome — whether it's framework improvements, new standards or templates, better onboarding docs, or platform adapters. See **[Onboarding](Framework/09-Onboarding)** in the Framework for how to adopt and contribute.
 
-Standards define quality expectations.
+---
 
-Governance defines constraints.
+## License
 
-Collaboration Orchestration coordinates engineering execution.
+ForgeOS is released under the **[LICENSE](LICENSE)**.
 
-Agents perform specialist engineering work.
+<p align="center">
+  <sub>ForgeOS — an engineering operating system for humans and AI.</sub>
+</p>
 
-Skills provide reusable capability.
+---
 
-Templates standardise engineering artefacts.
+<!-- shields.io badge definitions (kept at the bottom so the hero stays scannable) -->
 
-Tooling enables ForgeOS to operate across AI development platforms.
+[license]: https://img.shields.io/badge/license-MIT-orange?style=flat-square
+[release]: https://img.shields.io/github/v/release/Nealsch/ForgeOS?style=flat-square&color=f97316
+[stars]: https://img.shields.io/github/stars/Nealsch/ForgeOS?style=flat-square&color=f97316
+[forks]: https://img.shields.io/github/forks/Nealsch/ForgeOS?style=flat-square&color=f97316
+[sdlc]: https://img.shields.io/badge/SDLC-7_phase_lifecycle-2f6feb?style=flat-square
+[agnostic]: https://img.shields.io/badge/AI_Platform-Agnostic-8b5cf6?style=flat-square
+[cline]: https://img.shields.io/badge/Cline-supported-2f6feb?style=flat-square
+[claude]: https://img.shields.io/badge/Claude_Code-supported-d97757?style=flat-square
+[cursor]: https://img.shields.io/badge/Cursor-supported-111111?style=flat-square
+[codex]: https://img.shields.io/badge/Codex-supported-111111?style=flat-square
+[gemini]: https://img.shields.io/badge/Gemini_CLI-supported-4285F4?style=flat-square
+[roo]: https://img.shields.io/badge/Roo-supported-2f6feb?style=flat-square
+[vscode]: https://img.shields.io/badge/VS_Code_Agent_Mode-supported-007ACC?style=flat-square
 
-Together these components create a disciplined, repeatable and platform-independent approach to AI-assisted software engineering.
