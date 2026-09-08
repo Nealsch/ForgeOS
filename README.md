@@ -192,7 +192,7 @@ Together they form the complete environment for AI-assisted software development
 
 ## Contributing
 
-Contributions are welcome — whether it's framework improvements, new standards or templates, better onboarding docs, or platform adapters. See **[Onboarding](Framework/09-Onboarding)** in the Framework for how to adopt and contribute.
+Contributions are welcome — whether it's framework improvements, new standards or templates, better onboarding docs, or platform adapters. See **[CONTRIBUTING.md](CONTRIBUTING.md)** for the full contribution policy, and the **[Issues](https://github.com/Nealsch/ForgeOS/issues)** tab for the current forward development plan.
 
 ---
 
