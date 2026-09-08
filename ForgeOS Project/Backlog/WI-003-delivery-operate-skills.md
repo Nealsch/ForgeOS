@@ -7,7 +7,7 @@
 | Work Item ID | WI-003 |
 | Title | Populate the Delivery skill category and establish Operate-phase skill coverage (skill-gaps #1–#2) |
 | Work Item Type | Feature |
-| Status | Enriched — awaiting Product Owner approval |
+| Status | In SDLC — Specify complete (requirements baseline in `ForgeOS Project/Requirements/WI-003-delivery-operate-skills-requirements.md`; 14-skill inventory defined) — awaiting Product Owner Specify Gate review |
 
 ## Origin
 
@@ -65,7 +65,7 @@ complete for the delivery half of the lifecycle.
 
 | # | Question |
 |---|----------|
-| Q1 | Where do Operate skills live — inside `06-Delivery`, or a new category folder (e.g. `07-Operations`)? Adding a folder is additive and does not touch the protected Framework top-level numbering; decide before authoring. |
+| Q1 | Where do Operate skills live — inside `06-Delivery`, or a new category folder? **Resolved 2026-09-08 (Product Owner):** new category **`Framework/05-Skills/09-Operations/`** — folders 07 (`Documentation and Knowledge`) and 08 (`AI Assisted Engineering`) already exist. Adding a category folder is additive and does not touch the protected Framework top-level numbering. |
 | Q2 | One SKILL.md per capability (up to 19 files), or consolidated skills covering related capabilities (e.g. one Forge-Release-Management covering Rollback Planning + Deployment Verification)? Catalogue precedent favours capability-grained skills. |
 | Q3 | Security Monitoring: new skill in Delivery/Operations, or defer to `05-Security/` expansion (gap #8) with a pointer? Avoid duplicating security authority. |
 
