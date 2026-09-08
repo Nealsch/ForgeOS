@@ -79,6 +79,31 @@ The original Work Item should record both the original classification and the re
 
 ---
 
+## Compatibility Preference and Upgrade Review
+
+ForgeOS releases **prefer backwards compatibility, but never at the expense of functional gains**. Compatibility is a strong default, not an absolute constraint:
+
+* Where functional gains can be delivered without breaking consumers, the backwards-compatible path **must** be taken (see "Reducing Compatibility Impact").
+* Where a functional gain genuinely requires a Breaking change, blocking the gain purely to preserve compatibility is **not** the default outcome. The change is designed to minimise impact, passes through the deprecation policy, and is classified honestly.
+
+### Breaking-Change Human Review
+
+A Breaking change may only proceed when its **risks and rewards are presented to a human for review**:
+
+* The proposing party (human or AI) must document, in the Work Item and release notes: what breaks, which consumers are affected, the migration effort, and the functional reward that justifies the break.
+* The **Product Owner** reviews this risks/rewards statement and explicitly approves or rejects the break. AI participants may prepare the analysis but never approve the break themselves (per `Decision-Making.md`: AI proposes; the Product Owner disposes).
+* Approval is recorded in the Work Item and the release record of the Major release carrying the change.
+
+### Avoiding Stranded Projects
+
+The intent of this policy is that projects are **not left behind pinned to stale releases**:
+
+* Breaking changes should be accompanied by documented migration guidance so that upgrading remains a realistic, bounded task.
+* Deprecation windows and migration documentation exist to keep the upgrade cost of any single release small.
+* Projects bound to the Framework (per **ADR-009** sibling-clone + release-tag pin) should review the risks/rewards statement of each Major release and make a deliberate, recorded upgrade or hold decision — never an accidental one, and never a permanent one by default.
+
+---
+
 ## Framework-Specific Commitments
 
 For ForgeOS-the-framework specifically:
