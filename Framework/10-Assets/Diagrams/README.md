@@ -35,9 +35,11 @@ Inherited from `Framework/10-Assets/README.md`:
 
 | File | Type | Referenced by | Description |
 | --- | --- | --- | --- |
-| `forgeos-explainer.png` | PNG (rendered) | README, onboarding | High-level visual explainer of the ForgeOS architecture and SDLC. Source file not yet provided; when available, store alongside (e.g. `forgeos-explainer.drawio` or `.svg`). |
+| *(empty — see below)* | | | |
 
-> When adding a diagram, add a row here and name at least one document that references it, so reviewers can spot orphans.
+> **Note:** `forgeos-explainer.png` was moved to `ForgeOS Project/Assets/Diagrams/` (2026-09-08) — it explains the ForgeOS Project, not the Framework, and so belongs in project documentation. Project-specific assets live in the project; this folder holds only Framework-owned diagrams.
+
+When adding a diagram, add a row here and name at least one document that references it, so reviewers can spot orphans.
 
 ---
 
