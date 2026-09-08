@@ -7,7 +7,7 @@
 | Work Item ID | WI-002 |
 | Title | Define how projects consume the Framework: deployment/binding model, bootstrap procedure, folder-structure policy, and the existing-codebase adoption path |
 | Work Item Type | Feature / Technical Debt |
-| Status | Enriched — awaiting Product Owner approval |
+| Status | In SDLC — Design (Specify Gate passed 2026-09-08; requirements baseline in `ForgeOS Project/Requirements/WI-002-adoption-consumption-model-requirements.md`) |
 
 ## Origin
 
@@ -96,11 +96,12 @@ project and Framework.
 | ----- | ----- |
 | Recommended Priority | High |
 | Rationale | Every future project hits this on day one; without G1 the read-only/independent-versioning rule is unenforceable, and without G5/FS1 adoption is ad hoc per project. |
-| Outstanding Decisions | Product Owner approval of the binding mechanism recommendation (G1) and of sibling-clone vs submodule. |
+| Outstanding Decisions | None — Product Owner approved WI-002 and confirmed the G1 binding mechanism (sibling clone + pointer pinned to a Framework release tag; copy/fork forbidden) on 2026-09-08. |
 
 ## Related
 
-* WI-001 — Framework Documentation Alignment (runtime config patterns referenced by G3)
+* WI-001 — Framework Documentation Alignment (runtime config patterns referenced by G3) — **Completed/Closed 2026-09-08**
+* Specify-phase deliverable — `ForgeOS Project/Requirements/WI-002-adoption-consumption-model-requirements.md` (requirements baseline FR-1…FR-7, NFR-1…NFR-4, CR-1…CR-2)
 * ADR-005 — Platform-Independent Work Item Management
 * ADR-006 — ForgeOS Project folder & scripts
 * ADR-007 / ADR-008 — Codebase Analyst Agent & Graphify capability (Scenario B machinery)

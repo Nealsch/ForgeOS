@@ -7,7 +7,7 @@
 | Work Item ID | WI-001 |
 | Title | Align Framework documentation with Governance, Skills catalogue and session model (13 recorded decisions) |
 | Work Item Type | Technical Debt |
-| Status | In SDLC — Develop (all 13 decisions implemented 2026-09-07; pending Product Owner Quality Gate review) |
+| Status | Completed — Quality Gate passed 2026-09-08 (all 13 decisions verified in repository); closed |
 
 ## Origin
 
