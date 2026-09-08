@@ -7,7 +7,7 @@
 | Work Item ID | WI-003 |
 | Title | Populate the Delivery skill category and establish Operate-phase skill coverage (skill-gaps #1–#2) |
 | Work Item Type | Feature |
-| Status | In SDLC — Specify complete (requirements baseline in `ForgeOS Project/Requirements/WI-003-delivery-operate-skills-requirements.md`; 14-skill inventory defined) — awaiting Product Owner Specify Gate review |
+| Status | In SDLC — Design (Specify Gate passed 2026-09-08; consolidation mapping approved) |
 
 ## Origin
 
