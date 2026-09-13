@@ -149,7 +149,7 @@ Typical examples include:
 | Forge-Frontend-Development | ForgeOS Security Standard, OWASP Proactive Controls, OWASP Cheat Sheets |
 | Forge-Code-Review          | ForgeOS Security Standard, OWASP ASVS, OWASP Cheat Sheets               |
 | Forge-Test-Strategy        | ForgeOS Security Standard, OWASP WSTG                                   |
-| Forge-Quality-Assurance    | ForgeOS Security Standard, OWASP WSTG                                   |
+| Forge-Test-Execution       | ForgeOS Security Standard, OWASP WSTG                                   |
 | Forge-Defect-Management    | ForgeOS Security Standard, OWASP WSTG                                   |
 
 This approach allows ForgeOS to load only the security knowledge required for the task being performed while maintaining consistent security expectations across the Software Development Lifecycle.

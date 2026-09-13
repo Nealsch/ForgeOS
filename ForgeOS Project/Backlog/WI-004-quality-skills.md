@@ -7,7 +7,7 @@
 | Work Item ID | WI-004 |
 | Title | Expand the Quality skill category — complete Verify-phase coverage (skill-gaps #3) |
 | Work Item Type | Feature |
-| Status | Specify (decisions recorded 2026-09-13; authoring next) |
+| Status | Develop complete (2026-09-13): 5 skills authored, category README created, dangling refs resolved; Verify pending |
 
 ## Origin
 

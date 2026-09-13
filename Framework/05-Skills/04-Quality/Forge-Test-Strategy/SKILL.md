@@ -236,12 +236,11 @@ Typically receives input from:
 Provides guidance for:
 
 * Forge-Test-Planning
-* Forge-Test-Case-Design
-* Forge-Test-Automation
-* Forge-Quality-Assurance
-* Forge-Quality-Control
+* Forge-Test-Execution
+* Forge-Regression-Testing
 * Forge-Defect-Management
-* Forge-Test-Reporting
+* Forge-Performance-Engineering
+* Forge-Release-Readiness-Assessment
 
 ---
 
