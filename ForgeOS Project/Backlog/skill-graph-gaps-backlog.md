@@ -62,9 +62,9 @@ The 15 references appear in three contexts:
 
 | # | Skill (undefined) | Suggested Category | Referenced From | Status | Notes |
 | --- | --- | --- | --- | --- | --- |
-| 1 | `Forge-Quality-Assurance` | `04-Quality` | `Framework/02-Standards/05-Security/README.md:152` (security standards table)<br>`Framework/05-Skills/04-Quality/Forge-Test-Strategy/SKILL.md:241` (provides guidance for) | Open | Listed as consuming WSTG security standards and as a Test-Strategy consumer. Likely the QA counterpart to `Forge-Test-Strategy`. |
-| 2 | `Forge-Defect-Management` | `04-Quality` | `Framework/02-Standards/05-Security/README.md:153` (security standards table)<br>`Framework/05-Skills/04-Quality/Forge-Test-Strategy/SKILL.md:243` (provides guidance for) | Open | Listed as consuming WSTG security standards and as a Test-Strategy consumer. Defect lifecycle / triage skill. |
-| 3 | `Forge-Test-Design` | `04-Quality` | `Framework/05-Skills/01-Product/Forge-Acceptance-Criteria/SKILL.md:322` (section heading + ASCII flow)<br>`Framework/05-Skills/01-Product/Forge-Acceptance-Criteria/SKILL.md:330` (flow diagram label) | Open | Referenced twice with a full data-flow diagram. Closest existing skill is `Forge-Test-Planning`; clarify overlap before authoring. |
+| 1 | `Forge-Quality-Assurance` | `04-Quality` | `Framework/02-Standards/05-Security/README.md:152` (security standards table)<br>`Framework/05-Skills/04-Quality/Forge-Test-Strategy/SKILL.md:241` (provides guidance for) | Closed | Resolved 2026-09-13 via WI-004 (Q2/Q3): no QA skill authored — QA/QC defined as category-level concerns in `04-Quality/README.md`. References renamed: standards table row → `Forge-Test-Execution`; consumer-list entry removed. |
+| 2 | `Forge-Defect-Management` | `04-Quality` | `Framework/02-Standards/05-Security/README.md:153` (security standards table)<br>`Framework/05-Skills/04-Quality/Forge-Test-Strategy/SKILL.md:243` (provides guidance for) | Closed | Resolved 2026-09-13 via WI-004: **authored** at `Framework/05-Skills/04-Quality/Forge-Defect-Management/SKILL.md`. Both references now resolve. |
+| 3 | `Forge-Test-Design` | `04-Quality` | `Framework/05-Skills/01-Product/Forge-Acceptance-Criteria/SKILL.md:322` (section heading + ASCII flow)<br>`Framework/05-Skills/01-Product/Forge-Acceptance-Criteria/SKILL.md:330` (flow diagram label) | Closed | Resolved 2026-09-13 via WI-004 (Q2): reference renamed → `Forge-Test-Planning` (both occurrences). |
 
 ---
 
@@ -79,7 +79,7 @@ The 15 references appear in three contexts:
 | 8 | `Forge-Security-Assessment` | `05-Security` | `Framework/05-Skills/02-Architecture/Forge-Data-Modelling/SKILL.md:349` | Open | Overlap risk with `Forge-Security-Surface-Review` and `Forge-Threat-Modelling`. Clarify boundary. |
 | 9 | `Forge-Security-Review` | `05-Security` | `Framework/05-Skills/02-Architecture/Forge-Threat-Modelling/SKILL.md:367` | Open | Overlap risk with `Forge-Security-Surface-Review`. Name is more generic — may be the parent skill. |
 | 10 | `Forge-Security-Testing` | `05-Security` | `Framework/05-Skills/02-Architecture/Forge-Threat-Modelling/SKILL.md:373` | Open | Security-focused testing; clarify overlap with `Forge-Test-Strategy` (quality) and WSTG standards. |
-| 11 | `Forge-Testing` | `04-Quality` | `Framework/05-Skills/03-Engineering/Forge-API-Design/SKILL.md:390` ("Uses API contracts to define verification scenarios") | Open | Very generic name; likely redundant with `Forge-Test-Strategy` / `Forge-Test-Planning`. Strong candidate for removal rather than authoring. |
+| 11 | `Forge-Testing` | `04-Quality` | `Framework/05-Skills/03-Engineering/Forge-API-Design/SKILL.md:390` ("Uses API contracts to define verification scenarios") | Closed | Resolved 2026-09-13 via WI-004 (Q2): reference renamed → `Forge-Test-Strategy`. No skill authored (generic name descoped, as recommended). |
 
 ---
 
@@ -89,10 +89,10 @@ These six appear only in the `Provides guidance for:` list of `Framework/05-Skil
 
 | # | Skill (undefined) | Suggested Category | Line | Status | Notes |
 | --- | --- | --- | --- | --- | --- |
-| 12 | `Forge-Test-Case-Design` | `04-Quality` | `:239` | Open | Test-case authoring skill; clear gap in the catalogue. |
-| 13 | `Forge-Test-Automation` | `04-Quality` | `:240` | Open | Automation skill; clear gap in the catalogue. |
-| 14 | `Forge-Quality-Control` | `04-Quality` | `:242` | Open | Overlap risk with `Forge-Quality-Assurance` (#1) — QC vs QA distinction must be defined if both are authored. |
-| 15 | `Forge-Test-Reporting` | `04-Quality` | `:244` | Open | Reporting/analytics skill; clear gap in the catalogue. |
+| 12 | `Forge-Test-Case-Design` | `04-Quality` | `:239` | Closed | Resolved 2026-09-13 via WI-004 (Q2): consumer-list reference renamed → `Forge-Test-Planning`. No separate skill authored. |
+| 13 | `Forge-Test-Automation` | `04-Quality` | `:240` | Closed | Resolved 2026-09-13 via WI-004 (Q2): consumer-list reference renamed → `Forge-Test-Execution` (execution covers automation guidance). No separate skill authored. |
+| 14 | `Forge-Quality-Control` | `04-Quality` | `:242` | Closed | Resolved 2026-09-13 via WI-004 (Q2/Q3): consumer-list entry removed — QC defined as a category-level concern in `04-Quality/README.md`. |
+| 15 | `Forge-Test-Reporting` | `04-Quality` | `:244` | Closed | Resolved 2026-09-13 via WI-004 (Q1/Q2): consumer-list reference renamed → `Forge-Test-Execution` (Reporting is inside Execution). |
 
 > **Note:** `Forge-Test-Planning` appears in the same list at `:238` and **is** authored — it is the only item in the "Provides guidance for" cluster that currently resolves.
 
@@ -102,7 +102,7 @@ These six appear only in the `Provides guidance for:` list of `Framework/05-Skil
 
 | Cluster | Undefined Skills | Authored Sibling(s) |
 | --- | --- | --- |
-| Quality / Testing | 9 (`Forge-Test-Design`, `Forge-Test-Case-Design`, `Forge-Test-Automation`, `Forge-Quality-Assurance`, `Forge-Quality-Control`, `Forge-Defect-Management`, `Forge-Test-Reporting`, `Forge-Testing`, + `Forge-Test-Strategy` consumer relationships) | `Forge-Test-Strategy`, `Forge-Test-Planning` |
+| Quality / Testing | ~~9~~ **0 remaining** — resolved 2026-09-13 via WI-004: 5 skills authored (Test-Execution, Defect-Management, Regression-Testing, Performance-Engineering, Release-Readiness-Assessment); 4 refs renamed/removed (Test-Design→Test-Planning, Testing→Test-Strategy, QA→Test-Execution, QC removed). Audit: **zero MISSING** in cluster. | `Forge-Test-Strategy`, `Forge-Test-Planning`, `Forge-Test-Execution`, `Forge-Defect-Management`, `Forge-Regression-Testing`, `Forge-Performance-Engineering`, `Forge-Release-Readiness-Assessment` |
 | Security | 3 (`Forge-Security-Assessment`, `Forge-Security-Review`, `Forge-Security-Testing`) | `Forge-Threat-Modelling`, `Forge-Security-Surface-Review` |
 | Engineering / Architecture | 3 (`Forge-Authentication`, `Forge-Database-Design`, `Forge-Deployment-Management`) | `Forge-API-Design`, `Forge-Data-Modelling`, `Forge-Integration-Design`, `Forge-Database-Implementation` |
 | Product / Stewardship | 1 (`Forge-Project-Steward`) | `Forge-Prioritisation`, `Forge-Task-Routing`, `Forge-Session-Management` |
@@ -120,6 +120,8 @@ For each item, choose one:
 4. **Defer** — leave the forward-reference intact as a planning signal. **This is the current state of all 15 items** (v1.0.1 decision: do not modify until the skill is authored or explicitly descoped).
 
 > **Decision log (v1.0.1):** All 15 left as-is per Product Owner direction. This backlog exists so the decision is explicit and revisitable, not implicit.
+>
+> **Decision log (WI-004, 2026-09-13):** Quality/Testing cluster (items #1–#3, #11–#15) fully resolved — 5 skills authored, 3 references renamed, 2 entries removed (QA/QC → category-level). Total dangling refs reduced from 15 to 8 (items #4–#10, plus one lowercase false-positive `forge-sitesmiths` in a URL, not a skill reference).
 
 > **GitHub tracking:** this backlog is tracked publicly as [issue #5](https://github.com/Nealsch/ForgeOS/issues/5).
 
@@ -127,7 +129,7 @@ For each item, choose one:
 
 ## Recommended Order
 
-1. **Resolve the Quality/Testing cluster first (9 skills).** It is the largest gap and `Forge-Test-Strategy` already describes the intended shape of the cluster. Authoring these unlocks the full testing capability ladder.
+1. ~~**Resolve the Quality/Testing cluster first (9 skills).**~~ **Done** (WI-004, 2026-09-13).
 2. **Resolve the Security cluster (3 skills).** Clarify overlap with `Forge-Security-Surface-Review` and `Forge-Threat-Modelling` before authoring — the names suggest redundancy.
 3. **Resolve Engineering/Architecture edge cases (3 skills).** Each has a category ambiguity (authn: eng vs sec; DB design: arch vs eng; deployment: arch vs std). Decide placement before authoring.
 4. **Resolve `Forge-Project-Steward` (1 skill).** Clarify overlap with `Forge-Task-Routing` / `Forge-Session-Management` first.
