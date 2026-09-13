@@ -7,7 +7,7 @@
 | Work Item ID | WI-004 |
 | Title | Expand the Quality skill category — complete Verify-phase coverage (skill-gaps #3) |
 | Work Item Type | Feature |
-| Status | Imported |
+| Status | Specify (decisions recorded 2026-09-13; authoring next) |
 
 ## Origin
 
@@ -68,6 +68,18 @@ gap cluster is closed or explicitly descoped.
 | Implementation Complexity | Medium (4–6 new SKILL.md files depending on consolidation; updates to standards table and cross-references) |
 | Security Impact | None direct — security-testing skills belong to gap #8 / issue #3, not this WI |
 | Affected Components | `Framework/05-Skills/04-Quality/`, `Framework/02-Standards/05-Security/README.md` (quality standards table), `Forge-Test-Strategy/SKILL.md` consumer list, skill-gaps + skill-graph backlogs |
+
+## Specify Decisions (Product Owner, 2026-09-13)
+
+| # | Decision |
+|---|----------|
+| Q1 | **One skill per capability.** 5 new SKILL.md files → 8 skills total in Quality. |
+| Q2 | **Author where natural, rename the rest.** Forge-Defect-Management authored; Forge-Test-Reporting renamed onto Forge-Test-Execution (per Q1, Reporting is inside Execution); Forge-Test-Design → Forge-Test-Strategy; Forge-Test-Case-Design → Forge-Test-Planning; Forge-Testing / Forge-Quality-Assurance / Forge-Quality-Control covered by category README intro text. Target: zero MISSING in the referential-integrity audit. |
+| Q3 | **No QA/QC skills** — resolved by Q2; covered by the Quality category intro. |
+| Q4 | **Combined.** A single Forge-Performance-Engineering skill (Verify testing + Develop optimisation) in Quality; gap #4 partially closed. |
+| Q5 | **Quality.** Forge-Release-Readiness-Assessment is the Verify→Release gate skill. |
+
+**Agreed new skills:** Forge-Test-Execution · Forge-Defect-Management · Forge-Regression-Testing · Forge-Performance-Engineering · Forge-Release-Readiness-Assessment
 
 ## Key Specify Questions
 
