@@ -120,7 +120,7 @@ These fields are **recommendations** produced during enrichment. Actual Agent, S
 | ----- | ----- |
 | Recommended Lead Agent | _Architect / Backend Engineer / Frontend Engineer / QA Engineer / Security Engineer / DevOps Engineer / Technical Writer / Product Manager / Other_ |
 | Supporting Agents | _Additional roles likely to be required_ |
-| Required Skills | _Likely ForgeOS Skills, e.g. Forge-Backend-Development, Forge-Test-Strategy_ |
+| Required Skills | _Likely ForgeOS Skills (for example, Forge-Backend-Development, Forge-Test-Strategy)_ |
 | Applicable Standards | _Relevant ForgeOS Standards categories_ |
 | Required Templates | _Likely output templates, e.g. API Specification, Test Plan_ |
 | Recommended Initial SDLC Phase | _Specify / Design / Develop / Verify / Release / Operate / Improve_ |
