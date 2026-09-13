@@ -387,7 +387,7 @@ Uses API designs for implementation.
 
 ---
 
-## Forge-Testing
+## Forge-Test-Strategy
 
 Uses API contracts to define verification scenarios.
 

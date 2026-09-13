@@ -319,7 +319,7 @@ Acceptance Criteria
 
 ---
 
-## Forge-Test-Design
+## Forge-Test-Planning
 
 Uses acceptance criteria to create verification scenarios.
 
@@ -327,7 +327,7 @@ Uses acceptance criteria to create verification scenarios.
 Acceptance Criteria
         |
         ▼
-Forge-Test-Design
+Forge-Test-Planning
 ```
 
 ---
