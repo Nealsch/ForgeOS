@@ -346,7 +346,7 @@ Future engineering-level capability that transforms models into implementation s
 
 ---
 
-## Forge-Security-Assessment
+## Forge-Security-Surface-Review
 
 Uses data models to identify sensitive information and protection requirements.
 

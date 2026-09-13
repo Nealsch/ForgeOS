@@ -76,9 +76,9 @@ The 15 references appear in three contexts:
 | 5 | `Forge-Database-Design` | `02-Architecture` (or `03-Engineering`?) | `Framework/05-Skills/02-Architecture/Forge-Data-Modelling/SKILL.md:343` ("Provides data structures exposed through APIs") | Open | Overlap risk with `Forge-Data-Modelling` (architecture) and `Forge-Database-Implementation` (engineering). Clarify boundary. |
 | 6 | `Forge-Deployment-Management` | `02-Architecture` (or `07-Deployment` std?) | `Framework/05-Skills/02-Architecture/Forge-Integration-Design/SKILL.md:364` | Open | No relationship text captured in audit; inspect section when addressing. |
 | 7 | `Forge-Project-Steward` | `01-Product` (or `08-AI Assisted Engineering`?) | `Framework/05-Skills/01-Product/Forge-Prioritisation/SKILL.md:336` ("Uses prioritisation decisions to maintain project alignment and workflow progression") | Open | Name suggests possible overlap with `Forge-Task-Routing` / `Forge-Session-Management`. Clarify boundary. |
-| 8 | `Forge-Security-Assessment` | `05-Security` | `Framework/05-Skills/02-Architecture/Forge-Data-Modelling/SKILL.md:349` | Open | Overlap risk with `Forge-Security-Surface-Review` and `Forge-Threat-Modelling`. Clarify boundary. |
-| 9 | `Forge-Security-Review` | `05-Security` | `Framework/05-Skills/02-Architecture/Forge-Threat-Modelling/SKILL.md:367` | Open | Overlap risk with `Forge-Security-Surface-Review`. Name is more generic — may be the parent skill. |
-| 10 | `Forge-Security-Testing` | `05-Security` | `Framework/05-Skills/02-Architecture/Forge-Threat-Modelling/SKILL.md:373` | Open | Security-focused testing; clarify overlap with `Forge-Test-Strategy` (quality) and WSTG standards. |
+| 8 | `Forge-Security-Assessment` | `05-Security` | `Framework/05-Skills/02-Architecture/Forge-Data-Modelling/SKILL.md:349` | Closed | Resolved 2026-09-13 via WI-006 (Q1): reference renamed → `Forge-Security-Surface-Review`. No separate skill authored (redundant with Surface Review, as flagged). |
+| 9 | `Forge-Security-Review` | `05-Security` | `Framework/05-Skills/02-Architecture/Forge-Threat-Modelling/SKILL.md:367` | Closed | Resolved 2026-09-13 via WI-006 (Q1/Q2): **authored** at `Framework/05-Skills/05-Security/Forge-Security-Review/SKILL.md` (Secure Code Review + Dependency Vulnerability Assessment). Reference now resolves. |
+| 10 | `Forge-Security-Testing` | `05-Security` | `Framework/05-Skills/02-Architecture/Forge-Threat-Modelling/SKILL.md:373` | Closed | Resolved 2026-09-13 via WI-006 (Q1): **authored** at `Framework/05-Skills/05-Security/Forge-Security-Testing/SKILL.md` (runtime verification, OWASP WSTG-driven). Reference now resolves. |
 | 11 | `Forge-Testing` | `04-Quality` | `Framework/05-Skills/03-Engineering/Forge-API-Design/SKILL.md:390` ("Uses API contracts to define verification scenarios") | Closed | Resolved 2026-09-13 via WI-004 (Q2): reference renamed → `Forge-Test-Strategy`. No skill authored (generic name descoped, as recommended). |
 
 ---
@@ -103,7 +103,7 @@ These six appear only in the `Provides guidance for:` list of `Framework/05-Skil
 | Cluster | Undefined Skills | Authored Sibling(s) |
 | --- | --- | --- |
 | Quality / Testing | ~~9~~ **0 remaining** — resolved 2026-09-13 via WI-004: 5 skills authored (Test-Execution, Defect-Management, Regression-Testing, Performance-Engineering, Release-Readiness-Assessment); 4 refs renamed/removed (Test-Design→Test-Planning, Testing→Test-Strategy, QA→Test-Execution, QC removed). Audit: **zero MISSING** in cluster. | `Forge-Test-Strategy`, `Forge-Test-Planning`, `Forge-Test-Execution`, `Forge-Defect-Management`, `Forge-Regression-Testing`, `Forge-Performance-Engineering`, `Forge-Release-Readiness-Assessment` |
-| Security | 3 (`Forge-Security-Assessment`, `Forge-Security-Review`, `Forge-Security-Testing`) | `Forge-Threat-Modelling`, `Forge-Security-Surface-Review` |
+| Security | ~~3~~ **0 remaining** — resolved 2026-09-13 via WI-006: 2 skills authored (Security-Review, Security-Testing) + Secrets-Management added per gap #8; Security-Assessment renamed → Security-Surface-Review. Audit: **zero MISSING** in cluster. | `Forge-Security-Surface-Review`, `Forge-Security-Review`, `Forge-Security-Testing`, `Forge-Secrets-Management`, `Forge-Threat-Modelling` |
 | Engineering / Architecture | 3 (`Forge-Authentication`, `Forge-Database-Design`, `Forge-Deployment-Management`) | `Forge-API-Design`, `Forge-Data-Modelling`, `Forge-Integration-Design`, `Forge-Database-Implementation` |
 | Product / Stewardship | 1 (`Forge-Project-Steward`) | `Forge-Prioritisation`, `Forge-Task-Routing`, `Forge-Session-Management` |
 | **Total** | **15 undefined** (+1 already authored: `Forge-Test-Planning`) | |
@@ -130,7 +130,7 @@ For each item, choose one:
 ## Recommended Order
 
 1. ~~**Resolve the Quality/Testing cluster first (9 skills).**~~ **Done** (WI-004, 2026-09-13).
-2. **Resolve the Security cluster (3 skills).** Clarify overlap with `Forge-Security-Surface-Review` and `Forge-Threat-Modelling` before authoring — the names suggest redundancy.
+2. ~~**Resolve the Security cluster (3 skills).**~~ **Done** (WI-006, 2026-09-13).
 3. **Resolve Engineering/Architecture edge cases (3 skills).** Each has a category ambiguity (authn: eng vs sec; DB design: arch vs eng; deployment: arch vs std). Decide placement before authoring.
 4. **Resolve `Forge-Project-Steward` (1 skill).** Clarify overlap with `Forge-Task-Routing` / `Forge-Session-Management` first.
 

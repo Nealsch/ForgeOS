@@ -7,7 +7,16 @@
 | Work Item ID | WI-006 |
 | Title | Expand the Security skill category — Secure Code Review, Dependency Vulnerability Assessment, Secrets Management; resolve dangling Security refs (skill-gaps #8, skill-graph #8–#10) |
 | Work Item Type | Feature |
-| Status | Imported (2026-09-13; Specify questions pending Product Owner) |
+| Status | Develop complete (2026-09-13): 3 skills authored, category README rewritten, refs resolved; Verify pending |
+
+## Specify Decisions (Product Owner, 2026-09-13)
+
+| # | Decision |
+|---|----------|
+| Q1 | **Author two, rename one.** Author `Forge-Security-Review` and `Forge-Security-Testing`; rename `Forge-Security-Assessment` → `Forge-Security-Surface-Review` (Data-Modelling context). Category becomes 4 skills incl. Surface Review. |
+| Q2 | **Consolidate review-shaped work.** `Forge-Security-Review` covers Secure Code Review + Dependency Vulnerability Assessment; `Forge-Secrets-Management` separate (operational, cross-phase). 2 new skills total. |
+| Q3 | **Category README** with boundary definitions and deference rules (WI-004 QA/QC pattern). |
+| Q4 | **Scope guards confirmed.** Secure Coding stays in gap #4 / issue #2 (README pointer added); `Forge-Authentication` stays with the Engineering cluster; no new security standards. |
 
 ## Origin
 
