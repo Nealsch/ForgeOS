@@ -10,6 +10,7 @@ Skills in this category establish, verify, and protect software quality througho
 | ----- | -------------- |
 | [Forge-Test-Strategy](Forge-Test-Strategy/SKILL.md) | Defines how quality will be verified across the SDLC — approach, objectives, levels, and risk priorities. |
 | [Forge-Test-Planning](Forge-Test-Planning/SKILL.md) | Turns the strategy into concrete test plans with scope, schedules, and entry/exit criteria. |
+| [Forge-Automated-Test-Authoring](Forge-Automated-Test-Authoring/SKILL.md) | Authors automated tests (unit, integration, contract) from plans — test design, hermeticity, meaningful values, and mutation-scored quality feedback. |
 | [Forge-Test-Execution](Forge-Test-Execution/SKILL.md) | Executes planned tests, captures evidence, and reports results and quality status. |
 | [Forge-Regression-Testing](Forge-Regression-Testing/SKILL.md) | Verifies that existing behaviour keeps working as the system changes. |
 | [Forge-Defect-Management](Forge-Defect-Management/SKILL.md) | Records, triages, tracks, and verifies defects from discovery to verified closure. |
@@ -19,4 +20,4 @@ Skills in this category establish, verify, and protect software quality througho
 
 ## Relationship To The SDLC
 
-Quality skills are primary for the **Verify** phase, and contribute to **Design** (strategy), **Develop** (performance engineering, regression protection), and the **Verify-to-Release gate** (release readiness assessment).
+Quality skills are primary for the **Verify** phase, and contribute to **Design** (strategy), **Develop** (test authoring, performance engineering, regression protection), and the **Verify-to-Release gate** (release readiness assessment).
