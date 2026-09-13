@@ -7,7 +7,7 @@
 | Work Item ID | WI-006 |
 | Title | Expand the Security skill category — Secure Code Review, Dependency Vulnerability Assessment, Secrets Management; resolve dangling Security refs (skill-gaps #8, skill-graph #8–#10) |
 | Work Item Type | Feature |
-| Status | Develop complete (2026-09-13): 3 skills authored, category README rewritten, refs resolved; Verify pending |
+| Status | **Completed / Closed** — Quality Gate passed 2026-09-13 (record below) |
 
 ## Specify Decisions (Product Owner, 2026-09-13)
 
@@ -114,4 +114,35 @@ the issue #5 Security cluster closes.
 * `ForgeOS Project/Backlog/skill-gaps-backlog.md` gap #8
 * WI-004 — precedent for rename-vs-author pattern and category README (QA/QC)
 * `Framework/02-Standards/05-Security/README.md` — security standards hierarchy
-* `Framework/05-Skills/05-Security/` — target category
+* Framework/05-Skills/05-Security/ — target category
+* Framework/02-Standards/05-Security/README.md — security-standards mapping table (extended)
+* Framework/05-Skills/02-Architecture/Forge-Data-Modelling/SKILL.md — dangling ref renamed
+* ForgeOS Project/Scripts/wi006-audit.ps1 — reusable audit script (frontmatter/folder check, section check, template existence, referential integrity)
+
+## Verification Summary — Quality Gate Record (2026-09-13)
+
+Gate criteria adapted from the Verify phase (04-Verify/README.md) for documentation work, per the WI-003/WI-004 precedent.
+
+| Gate Criterion | Evidence | Result |
+| --- | --- | --- |
+| Deliverables exist | 3 SKILL.md files (Forge-Security-Review, Forge-Security-Testing, Forge-Secrets-Management) + rewritten `05-Security/README.md` merged via PR #17 (`312a68a`) | ✅ |
+| Standards applied | All 3 skills follow the `Forge-Security-Surface-Review` pattern: frontmatter, Purpose, Responsibility (+ not-responsible), When To Use / When Not To Use, Inputs, Method, Outputs, Standards Applied, Interaction With Other Skills, Success Criteria; OWASP standards mapped per skill; Tooling boundary respected (Secrets-Management policy-only) | ✅ |
+| Structural audit | Frontmatter `skill` name matches folder name (54/54 framework-wide); all 10 required sections present (3/3 new + 1/1 existing); all referenced templates exist in `07-Templates/` subfolders; line counts 129–136 | ✅ |
+| Referential integrity | Audit re-run 2026-09-13 (`Scripts/wi006-audit.ps1`): 54 authored skills, 60 distinct `Forge-*` refs — **zero MISSING in the Security cluster**. Remaining MISSING limited to Engineering/Product clusters (#4–#7) plus two false positives: `forge-sitesmiths` (lowercase URL) and `Forge-Test` (regex backtracking artifact from a trailing underscore in `Work-Item-template.md:123`, fixed in PR #18) | ✅ |
+| Specify decisions honoured | Q1: 2 authored + 1 rename implemented as recorded; Q2: Security-Review consolidates code review + dependency assessment, Secrets-Management separate; Q3: category README with boundary/deference tables; Q4: Secure Coding deferred with README pointer, Forge-Authentication untouched, no new standards | ✅ |
+| Backlogs reconciled | skill-gaps #8 Closed; skill-graph rows #8–#10 Closed with per-item notes; Security cluster summary line updated (PR #17) | ✅ |
+| Documentation updated | GitHub issue #3 closed automatically by PR #17 ("Closes #3"); issue #5 Security cluster rows resolved (title staleness — "15 dangling" — noted as follow-up) | ✅ |
+
+### Rename Mapping (as implemented)
+
+| Dangling reference | Resolution |
+| --- | --- |
+| `Forge-Security-Assessment` | → **Forge-Security-Surface-Review** (rename; Data-Modelling context) |
+| `Forge-Security-Review` | → **authored** at `05-Skills/05-Security/Forge-Security-Review/SKILL.md` |
+| `Forge-Security-Testing` | → **authored** at `05-Skills/05-Security/Forge-Security-Testing/SKILL.md` |
+
+### Residual Risks / Handoffs
+
+* Dangling count now **4** real refs (Engineering `Forge-Authentication`, `Forge-Database-Design`, `Forge-Deployment-Management`; Product `Forge-Project-Steward`) — issue #5 title should be updated from "15" to 4.
+* Secure Coding remains deferred to gap #4 / issue #2 (README pointer documents the interim boundary).
+* `Forge-Authentication` boundary decision owned by the future Engineering cluster WI.
