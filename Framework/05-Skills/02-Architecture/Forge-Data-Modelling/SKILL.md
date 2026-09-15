@@ -340,9 +340,9 @@ Uses data models to define information exchange.
 
 ---
 
-## Forge-Database-Design
+## Forge-Database-Implementation
 
-Future engineering-level capability that transforms models into implementation structures.
+Engineering-level capability that transforms logical models into implementation structures.
 
 ---
 

@@ -15,6 +15,7 @@ Skills in this category design and evaluate the structure of the system. Togethe
 | [Forge-Integration-Design](Forge-Integration-Design/SKILL.md) | Designs how the system interacts with external systems, services, and contracts. |
 | [Forge-Migration-Assessment](Forge-Migration-Assessment/SKILL.md) | Assesses feasibility, risk, and strategy for migrating systems or platforms. |
 | [Forge-Threat-Modelling](Forge-Threat-Modelling/SKILL.md) | Identifies and evaluates security threats at design time, before code exists to attack. |
+| [Forge-Technology-Evaluation](Forge-Technology-Evaluation/SKILL.md) | Evaluates candidate technologies against explicit weighted criteria and records selections as ADRs. |
 
 ## Relationship To The SDLC
 

@@ -13,6 +13,7 @@ Skills in this category turn approved designs and requirements into working, mai
 | [Forge-Frontend-Development](Forge-Frontend-Development/SKILL.md) | Implements user-facing interfaces that realise UX and functional requirements. |
 | [Forge-Database-Implementation](Forge-Database-Implementation/SKILL.md) | Implements persistence — schemas, migrations, and data access — from approved data models. |
 | [Forge-Secure-Coding](Forge-Secure-Coding/SKILL.md) | Applies the OWASP Proactive Controls, Cheat Sheets, and ASVS to day-to-day implementation decisions. |
+| [Forge-Authentication](Forge-Authentication/SKILL.md) | Implements identity verification — credentials, sessions, tokens, multi-factor and provider integration. |
 | [Forge-Refactoring](Forge-Refactoring/SKILL.md) | Improves internal structure and maintainability without changing observable behaviour. |
 | [Forge-Code-Review](Forge-Code-Review/SKILL.md) | Reviews changes for correctness, standards conformance, and maintainability before integration. |
 | [Forge-Debugging](Forge-Debugging/SKILL.md) | Diagnoses and isolates defects and failures in a disciplined, evidence-driven way. |
