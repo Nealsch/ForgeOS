@@ -13,7 +13,14 @@ Skills in this category define and shape *what* the software should be before en
 | [Forge-Acceptance-Criteria](Forge-Acceptance-Criteria/SKILL.md) | Defines measurable success and failure conditions that give every requirement an objective definition of done. |
 | [Forge-User-Story-Definition](Forge-User-Story-Definition/SKILL.md) | Decomposes requirements into deliverable, testable user stories. |
 | [Forge-Prioritisation](Forge-Prioritisation/SKILL.md) | Evaluates and sequences proposed work by value, risk, and dependencies. |
+| [Forge-Scope-Definition](Forge-Scope-Definition/SKILL.md) | Establishes and maintains the explicit project boundary — in scope, out of scope, constraints and assumptions. |
+| [Forge-Risk-Assessment](Forge-Risk-Assessment/SKILL.md) | Identifies, analyses and treats project and engineering risks across Specify and Design. |
+| [Forge-Glossary-Management](Forge-Glossary-Management/SKILL.md) | Establishes and maintains a shared project vocabulary with authoritative definitions. |
+| [Forge-Roadmap-Planning](Forge-Roadmap-Planning/SKILL.md) | Translates strategy and evaluation findings into sequenced, assumption-aware themes and milestones. |
+| [Forge-Product-Evaluation](Forge-Product-Evaluation/SKILL.md) | Assesses whether the delivered product achieves the objectives set at Specify, using evidence. |
+| [Forge-Backlog-Refinement](Forge-Backlog-Refinement/SKILL.md) | Keeps the backlog execution-ready: decomposed, de-duplicated, detailed and readiness-flagged. |
+| [Forge-Retrospective-Facilitation](Forge-Retrospective-Facilitation/SKILL.md) | Facilitates blame-free retrospectives and tracks improvement actions to verified closure. |
 
 ## Relationship To The SDLC
 
-Product skills are primary for the **Specify** phase, and contribute to **Improve** (re-prioritisation of discovered work) and the **Operate-to-Improve feedback loop** (converting operational findings into new requirements).
+Product skills are primary for the **Specify** phase (scope, requirements, risk baseline, glossary), contribute to **Design** (risk assessment, scope boundaries), and co-own **Improve** (product evaluation, backlog refinement, retrospectives, roadmap planning) alongside the Operate-to-Improve feedback loop (converting operational findings into new requirements).

@@ -202,6 +202,19 @@ Primary responsibilities:
 
 ---
 
+## Forge-Project-Steward
+
+Provides the capability to maintain continuous project alignment across sessions and phases.
+
+Primary responsibilities:
+
+* Maintain the authoritative alignment state (phase and gate position of in-flight work)
+* Verify new work against decisions, scope baseline and roadmap
+* Detect and escalate drift between artefacts, decisions and work
+* Prompt context restoration and verify handoff completeness
+
+---
+
 # Relationship With Other ForgeOS Components
 
 | Component                      | Responsibility                                                                |

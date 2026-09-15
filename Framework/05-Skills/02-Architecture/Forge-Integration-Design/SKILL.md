@@ -361,9 +361,9 @@ Future engineering capability that transforms integration requirements into impl
 
 ---
 
-## Forge-Deployment-Management
+## Forge-Release-Management
 
-Uses integration requirements when preparing operational environments.
+Uses integration requirements when preparing releases and operational environments.
 
 ---
 

@@ -343,7 +343,7 @@ Skills may be shared by multiple agents.
 Examples include:
 
 * Forge-API-Design
-* Forge-Database-Design
+* Forge-Data-Modelling
 * Forge-Frontend-Development
 * Forge-Security-Review
 * Forge-Performance-Engineering
