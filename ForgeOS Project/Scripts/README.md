@@ -39,7 +39,14 @@ See `ForgeOS Project/ADRs/ADR-006.md` for the full decision.
 
 ## Contents
 
-This folder is currently a placeholder. As automation is introduced, scripts should be organised by purpose:
+Current scripts:
+
+| Script | Purpose | Introduced |
+| --- | --- | --- |
+| `wi006-audit.ps1` | Referential-integrity audit of the skill catalogue — extracts authored skills from `SKILL.md` frontmatter, scans the Framework for `Forge-*` references and reports MISSING refs; includes structural checks (Security category, frontmatter-vs-folder). | WI-006 (2026-09-13); reused by WI-004/007/009/010 |
+| `render-explainer.ps1` | Renders `Assets/Diagrams/forgeos-explainer.svg` to `forgeos-explainer.png` (3200×2000, 2× scale) via headless Chromium (Edge). Fails loudly if Edge or the SVG is missing or if dimensions are wrong. | WI-005 (2026-11-11) |
+
+As automation is introduced, scripts should be organised by purpose:
 
 * `validate/` — repository and documentation validation.
 * `generate/` — index, TOC and documentation generation.
