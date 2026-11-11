@@ -74,3 +74,30 @@ Files written/modified:
 - d:\Code Library\ForgeOS\ForgeOS Project\Assets\Diagrams\README.md
 - d:\Code Library\ForgeOS\ForgeOS Project\Backlog\WI-005-explainer-diagram-refresh.md
 - d:\Code Library\ForgeOS\ForgeOS Project\Backlog\WI-010-adr008-tooling-evaluation.md
+
+---
+
+## Addendum 2 — Session close (2026-11-11)
+
+**Completed after the WI-005 addendum:**
+
+- PR #24 merged (`0875e79`) — WI-005 diagram refresh on `main`; [issue #8](https://github.com/Nealsch/ForgeOS/issues/8) auto-closed.
+- `ForgeOS Project/Scripts/render-explainer.ps1` added (PO-approved): headless Edge SVG→PNG renderer (3200×2000, 2× scale) + script inventory recorded in `Scripts/README.md` (folder no longer a placeholder). Merged via PR (`5b3811a`) — note: the ForgeOS repo now has branch protection; **all `main` changes must go through PRs**.
+
+**Standing Product Owner directive (governs all future sessions):**
+
+- Development focus is **NB Fresh Start** (`d:\Code Library\nb-fresh-start`, private repo `Nealsch/NB-Fresh-Start`) — the first real ForgeOS adoption.
+- ForgeOS is touched only when work on Fresh Start exposes a worthwhile fix or extension for future projects.
+
+**NB Fresh Start status (observed 2026-11-11):**
+
+- Bootstrapped from Project Template v1.0.1; Framework binding pinned to ForgeOS `v1.0.1`.
+- Specify Gate PASSED (DR-001…DR-009) and Design Gate PASSED (DR-010), both 2026-11-10.
+- WI-004 (NBFS.UI shell) and WI-005 (NBFS.Store, SQLite) implemented and verified (Pester green, PSScriptAnalyzer clean).
+- Next: WI-006 + WI-007 (discovery provider framework + applications/system providers), then WI-008/WI-009/WI-010.
+- Full plan exists: `docs/REQUIREMENTS.md`, `docs/requirements/USER-STORIES.md` (US-01…US-15), `docs/ROADMAP.md` (6 increments), `work/BACKLOG.md` (WI-001…WI-011). Unfilled template slots: `work/PROJECT-PLAN.md`, `work/ITERATION.md`.
+- PO action pending: interactive launch of `src/NBFS.ps1` from a Windows PowerShell 7 prompt (first visual check of the shell).
+
+**Next session:** start fresh in `nb-fresh-start` — kick off the WI-006+WI-007 iteration (fill `work/ITERATION.md` at kickoff) and carry the focus directive into the project's session record.
+
+**ForgeOS backlog state:** empty — WI-001…WI-011 all Completed/Closed. ForgeOS is in a maintenance-only state; reopen only per the focus directive.
