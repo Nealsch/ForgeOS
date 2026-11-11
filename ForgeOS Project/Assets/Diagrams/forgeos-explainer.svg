@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#475569"/>
+    </marker>
+  </defs>
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <rect x="0" y="0" width="1600" height="1000" fill="#ffffff"/>
+    <rect x="0" y="0" width="1600" height="92" fill="#0f172a"/>
+    <text x="800" y="44" text-anchor="middle" font-size="28" font-weight="700" fill="#ffffff">ForgeOS — AI-Assisted Software Development Operating System</text>
+    <text x="800" y="70" text-anchor="middle" font-size="15" fill="#94a3b8">Standards-driven SDLC for humans and AI · platform-independent · the Framework is the single source of truth</text>
+
+    <text x="40" y="128" font-size="16" font-weight="700" fill="#334155">AUTHORITY</text>
+    <text x="550" y="128" font-size="16" font-weight="700" fill="#334155">DOWNSTREAM LAYERS — authority flows downward</text>
+    <text x="1030" y="128" font-size="16" font-weight="700" fill="#334155">PROJECT LAYER — ForgeOS itself</text>
+
+    <rect x="40" y="146" width="470" height="38" rx="6" fill="#e2e8f0" stroke="#94a3b8"/>
+    <text x="275" y="170" text-anchor="middle" font-size="14" fill="#334155">User Instructions — task-specific direction (highest authority)</text>
+
+    <line x1="275" y1="184" x2="275" y2="204" stroke="#475569" stroke-width="2" marker-end="url(#arr)"/>
+
+    <rect x="40" y="206" width="470" height="54" rx="8" fill="#dbeafe" stroke="#2563eb" stroke-width="1.5"/>
+    <text x="275" y="229" text-anchor="middle" font-size="16" font-weight="700" fill="#1e3a8a">AGENTS.md</text>
+    <text x="275" y="249" text-anchor="middle" font-size="13" fill="#1e40af">framework governance and repository operation</text>
+
+    <line x1="275" y1="260" x2="275" y2="280" stroke="#475569" stroke-width="2" marker-end="url(#arr)"/>
+
+    <rect x="40" y="282" width="470" height="384" rx="10" fill="#f8fafc" stroke="#2563eb" stroke-width="2"/>
+    <path d="M50,282 H500 A10,10 0 0 1 510,292 V328 H40 V292 A10,10 0 0 1 50,282 Z" fill="#2563eb"/>
+    <text x="275" y="311" text-anchor="middle" font-size="17" font-weight="700" fill="#ffffff">FRAMEWORK — reusable engineering system</text>
+
+    <text x="58" y="350" font-size="14"><tspan font-weight="700" fill="#1e3a8a">Workflow</tspan><tspan fill="#475569"> — SDLC phases, gates, deliverables</tspan></text>
+    <text x="58" y="377" font-size="14"><tspan font-weight="700" fill="#1e3a8a">Standards</tspan><tspan fill="#475569"> — how the work is performed</tspan></text>
+    <text x="58" y="404" font-size="14"><tspan font-weight="700" fill="#1e3a8a">Governance</tspan><tspan fill="#475569"> — change, release, version, compatibility</tspan></text>
+    <text x="58" y="431" font-size="14"><tspan font-weight="700" fill="#1e3a8a">Agents</tspan><tspan fill="#475569"> — specialist engineering roles</tspan></text>
+    <text x="58" y="458" font-size="14"><tspan font-weight="700" fill="#1e3a8a">Skills</tspan><tspan fill="#475569"> — reusable engineering capabilities</tspan></text>
+    <text x="58" y="485" font-size="14"><tspan font-weight="700" fill="#1e3a8a">Prompts</tspan><tspan fill="#475569"> — reusable prompt assets</tspan></text>
+    <text x="58" y="512" font-size="14"><tspan font-weight="700" fill="#1e3a8a">Templates</tspan><tspan fill="#475569"> — standard document structures</tspan></text>
+    <text x="58" y="539" font-size="14"><tspan font-weight="700" fill="#1e3a8a">Examples</tspan><tspan fill="#475569"> — reference implementations</tspan></text>
+    <text x="58" y="566" font-size="14"><tspan font-weight="700" fill="#1e3a8a">Onboarding</tspan><tspan fill="#475569"> — framework documentation</tspan></text>
+    <text x="58" y="593" font-size="14"><tspan font-weight="700" fill="#1e3a8a">Assets</tspan><tspan fill="#475569"> — diagrams, branding, supporting media</tspan></text>
+    <text x="58" y="620" font-size="14"><tspan font-weight="700" fill="#1e3a8a">Collaboration Orchestration</tspan><tspan fill="#475569"> — human–AI coordination</tspan></text>
+    <text x="58" y="647" font-size="14"><tspan font-weight="700" fill="#1e3a8a">Glossary</tspan><tspan fill="#475569"> — shared terminology</tspan></text>
+
+        <line x1="510" y1="337" x2="544" y2="337" stroke="#475569" stroke-width="2" marker-end="url(#arr)"/>
+
+    <rect x="550" y="300" width="440" height="74" rx="8" fill="#dcfce7" stroke="#16a34a" stroke-width="1.5"/>
+    <text x="570" y="327" font-size="16" font-weight="700" fill="#14532d">Project Documentation</text>
+    <text x="570" y="347" font-size="13" fill="#166534">project-specific knowledge — requirements, design, ADRs</text>
+    <text x="570" y="365" font-size="12" fill="#15803d">ForgeOS Project (right) is this layer for ForgeOS itself</text>
+
+    <line x1="770" y1="374" x2="770" y2="400" stroke="#475569" stroke-width="2" marker-end="url(#arr)"/>
+
+    <rect x="550" y="404" width="440" height="120" rx="8" fill="#fef9c3" stroke="#ca8a04" stroke-width="1.5"/>
+    <text x="570" y="430" font-size="16" font-weight="700" fill="#713f12">Tooling — AI platform integration</text>
+    <rect x="566" y="442" width="128" height="30" rx="6" fill="#ffffff" stroke="#ca8a04"/>
+    <text x="630" y="462" text-anchor="middle" font-size="12.5" fill="#713f12">Platforms</text>
+    <rect x="706" y="442" width="128" height="30" rx="6" fill="#ffffff" stroke="#ca8a04"/>
+    <text x="770" y="462" text-anchor="middle" font-size="12.5" fill="#713f12">Adapters</text>
+    <rect x="846" y="442" width="128" height="30" rx="6" fill="#ffffff" stroke="#ca8a04"/>
+    <text x="910" y="462" text-anchor="middle" font-size="12.5" fill="#713f12">Capabilities</text>
+    <text x="570" y="494" font-size="12" fill="#854d0e">who integrates · how it connects · what is supported</text>
+    <text x="570" y="514" font-size="12" font-weight="700" fill="#b45309">Never owns engineering decisions</text>
+
+    <line x1="770" y1="524" x2="770" y2="550" stroke="#475569" stroke-width="2" marker-end="url(#arr)"/>
+
+    <rect x="550" y="554" width="440" height="84" rx="8" fill="#f3e8ff" stroke="#9333ea" stroke-width="1.5"/>
+    <text x="570" y="581" font-size="16" font-weight="700" fill="#581c87">.clinerules — Platform Runtime Configuration</text>
+    <text x="570" y="602" font-size="13" fill="#6b21a8">adapts an AI platform to ForgeOS (behaviour only)</text>
+    <text x="570" y="622" font-size="13" fill="#6b21a8">never defines SDLC, standards or architecture</text>
+
+    <line x1="990" y1="337" x2="1024" y2="337" stroke="#16a34a" stroke-width="2" stroke-dasharray="6,4" marker-end="url(#arr)"/>
+
+    <rect x="1030" y="282" width="530" height="356" rx="10" fill="#f8fafc" stroke="#16a34a" stroke-width="2"/>
+    <path d="M1040,282 H1550 A10,10 0 0 1 1560,292 V328 H1030 V292 A10,10 0 0 1 1040,282 Z" fill="#16a34a"/>
+    <text x="1295" y="311" text-anchor="middle" font-size="17" font-weight="700" fill="#ffffff">FORGEOS PROJECT — living project documentation</text>
+
+    <rect x="1046" y="344" width="156" height="58" rx="8" fill="#ffffff" stroke="#bbf7d0"/>
+    <text x="1124" y="369" text-anchor="middle" font-size="14" font-weight="700" fill="#14532d">ADRs</text>
+    <text x="1124" y="388" text-anchor="middle" font-size="11" fill="#475569">decisions</text>
+    <rect x="1214" y="344" width="156" height="58" rx="8" fill="#ffffff" stroke="#bbf7d0"/>
+    <text x="1292" y="369" text-anchor="middle" font-size="14" font-weight="700" fill="#14532d">Assets</text>
+    <text x="1292" y="388" text-anchor="middle" font-size="11" fill="#475569">diagrams, branding</text>
+    <rect x="1382" y="344" width="156" height="58" rx="8" fill="#ffffff" stroke="#bbf7d0"/>
+    <text x="1460" y="369" text-anchor="middle" font-size="14" font-weight="700" fill="#14532d">Backlog</text>
+    <text x="1460" y="388" text-anchor="middle" font-size="11" fill="#475569">work items</text>
+    <rect x="1046" y="410" width="156" height="58" rx="8" fill="#ffffff" stroke="#bbf7d0"/>
+    <text x="1124" y="435" text-anchor="middle" font-size="14" font-weight="700" fill="#14532d">Design</text>
+    <text x="1124" y="454" text-anchor="middle" font-size="11" fill="#475569">design docs</text>
+    <rect x="1214" y="410" width="156" height="58" rx="8" fill="#ffffff" stroke="#bbf7d0"/>
+    <text x="1292" y="435" text-anchor="middle" font-size="14" font-weight="700" fill="#14532d">Release Notes</text>
+    <text x="1292" y="454" text-anchor="middle" font-size="11" fill="#475569">history</text>
+    <rect x="1382" y="410" width="156" height="58" rx="8" fill="#ffffff" stroke="#bbf7d0"/>
+    <text x="1460" y="435" text-anchor="middle" font-size="14" font-weight="700" fill="#14532d">Requirements</text>
+    <text x="1460" y="454" text-anchor="middle" font-size="11" fill="#475569">input specs</text>
+    <rect x="1046" y="476" width="156" height="58" rx="8" fill="#ffffff" stroke="#bbf7d0"/>
+    <text x="1124" y="501" text-anchor="middle" font-size="14" font-weight="700" fill="#14532d">Roadmap</text>
+    <text x="1124" y="520" text-anchor="middle" font-size="11" fill="#475569">forward plan</text>
+    <rect x="1214" y="476" width="156" height="58" rx="8" fill="#ffffff" stroke="#bbf7d0"/>
+    <text x="1292" y="501" text-anchor="middle" font-size="14" font-weight="700" fill="#14532d">Scripts</text>
+    <text x="1292" y="520" text-anchor="middle" font-size="11" fill="#475569">automation</text>
+    <rect x="1382" y="476" width="156" height="58" rx="8" fill="#ffffff" stroke="#bbf7d0"/>
+    <text x="1460" y="501" text-anchor="middle" font-size="14" font-weight="700" fill="#14532d">Sessions</text>
+    <text x="1460" y="520" text-anchor="middle" font-size="11" fill="#475569">handoffs</text>
+
+    <text x="1295" y="560" text-anchor="middle" font-size="12.5" fill="#166534">Project documentation for ForgeOS itself —</text>
+    <text x="1295" y="578" text-anchor="middle" font-size="12.5" fill="#166534">not part of the reusable template.</text>
+
+        <text x="40" y="700" font-size="15"><tspan font-weight="700" fill="#334155">SOFTWARE DEVELOPMENT LIFECYCLE</tspan><tspan fill="#475569"> — every phase defines: purpose · inputs · activities · deliverables · standards · agents · exit criteria · quality gate</tspan></text>
+
+    <rect x="40" y="716" width="196" height="56" rx="8" fill="#e0f2fe" stroke="#0284c7" stroke-width="1.5"/>
+    <text x="138" y="750" text-anchor="middle" font-size="17" font-weight="700" fill="#075985">Specify</text>
+    <line x1="238" y1="744" x2="250" y2="744" stroke="#475569" stroke-width="2" marker-end="url(#arr)"/>
+    <rect x="254" y="716" width="196" height="56" rx="8" fill="#e0f2fe" stroke="#0284c7" stroke-width="1.5"/>
+    <text x="352" y="750" text-anchor="middle" font-size="17" font-weight="700" fill="#075985">Design</text>
+    <line x1="452" y1="744" x2="464" y2="744" stroke="#475569" stroke-width="2" marker-end="url(#arr)"/>
+    <rect x="468" y="716" width="196" height="56" rx="8" fill="#e0f2fe" stroke="#0284c7" stroke-width="1.5"/>
+    <text x="566" y="750" text-anchor="middle" font-size="17" font-weight="700" fill="#075985">Develop</text>
+    <line x1="666" y1="744" x2="678" y2="744" stroke="#475569" stroke-width="2" marker-end="url(#arr)"/>
+    <rect x="682" y="716" width="196" height="56" rx="8" fill="#e0f2fe" stroke="#0284c7" stroke-width="1.5"/>
+    <text x="780" y="750" text-anchor="middle" font-size="17" font-weight="700" fill="#075985">Verify</text>
+    <line x1="880" y1="744" x2="892" y2="744" stroke="#475569" stroke-width="2" marker-end="url(#arr)"/>
+    <rect x="896" y="716" width="196" height="56" rx="8" fill="#e0f2fe" stroke="#0284c7" stroke-width="1.5"/>
+    <text x="994" y="750" text-anchor="middle" font-size="17" font-weight="700" fill="#075985">Release</text>
+    <line x1="1094" y1="744" x2="1106" y2="744" stroke="#475569" stroke-width="2" marker-end="url(#arr)"/>
+    <rect x="1110" y="716" width="196" height="56" rx="8" fill="#e0f2fe" stroke="#0284c7" stroke-width="1.5"/>
+    <text x="1208" y="750" text-anchor="middle" font-size="17" font-weight="700" fill="#075985">Operate</text>
+    <line x1="1308" y1="744" x2="1320" y2="744" stroke="#475569" stroke-width="2" marker-end="url(#arr)"/>
+    <rect x="1324" y="716" width="196" height="56" rx="8" fill="#e0f2fe" stroke="#0284c7" stroke-width="1.5"/>
+    <text x="1422" y="750" text-anchor="middle" font-size="17" font-weight="700" fill="#075985">Improve</text>
+    <text x="40" y="798" font-size="13" fill="#475569">A phase is complete only when its exit criteria are met and its Quality Gate review has passed.</text>
+
+    <text x="40" y="838" font-size="15"><tspan font-weight="700" fill="#334155">ENGINEERING GUIDANCE HIERARCHY</tspan><tspan fill="#64748b"> (within the Framework — higher wins on conflict)</tspan></text>
+
+    <rect x="40" y="856" width="268" height="52" rx="8" fill="#e2e8f0" stroke="#475569" stroke-width="1.5"/>
+    <text x="174" y="888" text-anchor="middle" font-size="15.5" font-weight="700" fill="#1e293b">Workflow</text>
+    <line x1="310" y1="882" x2="326" y2="882" stroke="#475569" stroke-width="2" marker-end="url(#arr)"/>
+    <rect x="332" y="856" width="268" height="52" rx="8" fill="#e2e8f0" stroke="#475569" stroke-width="1.5"/>
+    <text x="466" y="888" text-anchor="middle" font-size="15.5" font-weight="700" fill="#1e293b">Standards</text>
+    <line x1="602" y1="882" x2="618" y2="882" stroke="#475569" stroke-width="2" marker-end="url(#arr)"/>
+    <rect x="624" y="856" width="268" height="52" rx="8" fill="#e2e8f0" stroke="#475569" stroke-width="1.5"/>
+    <text x="758" y="888" text-anchor="middle" font-size="15.5" font-weight="700" fill="#1e293b">Governance</text>
+    <line x1="894" y1="882" x2="910" y2="882" stroke="#475569" stroke-width="2" marker-end="url(#arr)"/>
+    <rect x="916" y="856" width="268" height="52" rx="8" fill="#e2e8f0" stroke="#475569" stroke-width="1.5"/>
+    <text x="1050" y="888" text-anchor="middle" font-size="15.5" font-weight="700" fill="#1e293b">Agent Responsibilities</text>
+    <line x1="1186" y1="882" x2="1202" y2="882" stroke="#475569" stroke-width="2" marker-end="url(#arr)"/>
+    <rect x="1208" y="856" width="268" height="52" rx="8" fill="#e2e8f0" stroke="#475569" stroke-width="1.5"/>
+    <text x="1342" y="888" text-anchor="middle" font-size="15.5" font-weight="700" fill="#1e293b">Skill Implementation</text>
+
+    <text x="40" y="940" font-size="13.5" fill="#475569">Boundaries: Tooling never owns engineering decisions · analysis outputs are signals — the Framework draws the conclusions</text>
+    <text x="40" y="960" font-size="13.5" fill="#475569">Project rules apply within, never against, the Framework · if documents conflict, the higher layer wins (see AGENTS.md, Authority Hierarchy)</text>
+
+    <rect x="0" y="968" width="1600" height="32" fill="#f1f5f9"/>
+    <text x="800" y="989" text-anchor="middle" font-size="12.5" fill="#64748b">forgeos-explainer — rebuilt 2026-11-11 via WI-005 from AGENTS.md · editable source: forgeos-explainer.svg · rendered: forgeos-explainer.png</text>
+  </g>
+</svg>
