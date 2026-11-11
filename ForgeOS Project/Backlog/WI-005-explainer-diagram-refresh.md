@@ -7,7 +7,7 @@
 | Work Item ID | WI-005 |
 | Title | Refresh `forgeos-explainer.png` to reflect current Framework structure |
 | Work Item Type | Maintenance / Documentation |
-| Status | Imported — tracked publicly as [GitHub issue #8](https://github.com/Nealsch/ForgeOS/issues/8) |
+| Status | Completed — executed 2026-11-11, Option B; tracked publicly as [GitHub issue #8](https://github.com/Nealsch/ForgeOS/issues/8) (closes on PR merge) |
 
 ## Origin
 
@@ -98,3 +98,42 @@ provided or the diagram rebuilt.
 * AGENTS.md — Engineering Guidance Hierarchy (Governance layer) and repository structure
 * Assets boundary rule (2026-09-08 relocation, commit `3d84a83`)
 * WI-004 — Quality category expansion; higher priority, work first
+
+---
+
+## Execution Summary (2026-11-11)
+
+### Specify Decisions (Product Owner, 2026-11-11)
+
+| Q | Decision |
+| --- | --- |
+| Q1 | **Option B** — original source file unavailable; diagram rebuilt from scratch as a committed, editable source (`forgeos-explainer.svg`), rendered to `forgeos-explainer.png`. |
+| Q2 | **Yes** — diagram index README updated with separate source + rendered rows. |
+| Q3 | **Add explicitly** — Framework component list now includes Prompts, Governance and Glossary. |
+
+### Deliverables
+
+| Deliverable | Location |
+| --- | --- |
+| Editable diagram source (new) | `ForgeOS Project/Assets/Diagrams/forgeos-explainer.svg` — hand-authored SVG, 1600×1000 viewBox |
+| Rendered PNG (replaced) | `ForgeOS Project/Assets/Diagrams/forgeos-explainer.png` — 3200×2000 (2× scale), rendered from the SVG via headless Chromium (Edge) |
+| Diagram index (Q2) | `ForgeOS Project/Assets/Diagrams/README.md` — source + rendered rows |
+| WI-010 reconciliation | `ForgeOS Project/Backlog/WI-010-adr008-tooling-evaluation.md` — status → merged (PR #23) |
+
+### Content (authored from current AGENTS.md)
+
+* **Authority column:** User Instructions → AGENTS.md → Framework — all 12 components listed explicitly with one-line purposes (fixes drift points 1 and 2: Governance present, Prompts/Governance/Glossary added).
+* **Downstream layers:** Project Documentation → Tooling (Platforms / Adapters / Capabilities; "never owns engineering decisions") → `.clinerules` Platform Runtime Configuration.
+* **Project layer:** ForgeOS Project enumerated with all 9 current folders (ADRs, Assets, Backlog, Design, Release Notes, Requirements, Roadmap, Scripts, Sessions) — replaces the generic "Other Project Artefacts" box (fixes drift point 3, and covers Design/Requirements/Sessions which postdate the 2026-09-08 review).
+* **SDLC strip:** 7 phases, phase-definition caption, Quality Gate completion rule.
+* **Engineering Guidance Hierarchy strip:** Workflow → Standards → Governance → Agent Responsibilities → Skill Implementation.
+* **Boundary notes:** Tooling never owns engineering decisions; project rules apply within, never against, the Framework.
+
+### Verification
+
+| Check | Result |
+| --- | --- |
+| PNG render | 3200×2000 px verified (System.Drawing); content pixel-sampled — header band, Framework header, SDLC box and footer band all match intended fills | ✅ |
+| Source hygiene | SVG is diffable text committed alongside the PNG; footer records rebuild date and WI; future updates edit the SVG and re-render | ✅ |
+| Consumers | Root `README.md` embedding unchanged (same filename, width 820) | ✅ |
+| Referential audit (`Scripts/wi006-audit.ps1`) | 66 authored skills, 67 refs, zero real MISSING — no Framework references touched by this WI | ✅ |

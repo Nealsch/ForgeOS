@@ -52,3 +52,25 @@ Read/referenced:
 - d:\Code Library\ForgeOS\Tooling\01-Platforms\Graphify\README.md
 - d:\Code Library\ForgeOS\ForgeOS Project\Backlog\skill-graph-gaps-backlog.md
 - d:\Code Library\ForgeOS\ForgeOS Project\Scripts\wi006-audit.ps1
+
+---
+
+## Addendum — WI-005 executed later the same session
+
+Product Owner unblocked WI-005 and issued Specify decisions: **Option B** (rebuild as committed editable source), **Q2 yes** (index README fixed), **Q3 add Prompts/Governance/Glossary explicitly**. Issue #5 found already closed (2026-09-15, COMPLETED); PR #23 merged (`466aebc`).
+
+Done:
+
+- `forgeos-explainer.svg` authored — new editable source (authority layers, all 12 Framework components, Tooling layer, ForgeOS Project 9 folders, SDLC strip, Engineering Guidance Hierarchy, boundary notes).
+- `forgeos-explainer.png` re-rendered from the SVG via headless Edge (3200×2000, 2× scale) — replaces the 1.8 MB PNG-only asset; render verified by pixel sampling.
+- Diagrams README index: separate source + rendered rows (Q2).
+- WI-005 status → Completed with Execution Summary; WI-010 status reconciled to merged (PR #23).
+- Branch `wi005-explainer-diagram-refresh` pushed; PR opened with "Closes #8".
+
+Files written/modified:
+
+- d:\Code Library\ForgeOS\ForgeOS Project\Assets\Diagrams\forgeos-explainer.svg (new)
+- d:\Code Library\ForgeOS\ForgeOS Project\Assets\Diagrams\forgeos-explainer.png (re-rendered)
+- d:\Code Library\ForgeOS\ForgeOS Project\Assets\Diagrams\README.md
+- d:\Code Library\ForgeOS\ForgeOS Project\Backlog\WI-005-explainer-diagram-refresh.md
+- d:\Code Library\ForgeOS\ForgeOS Project\Backlog\WI-010-adr008-tooling-evaluation.md

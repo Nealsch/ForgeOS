@@ -5,7 +5,7 @@
 | Work Item | WI-010 |
 | Origin | skill-gaps backlog #10 — evaluate open-source code-analysis tooling (CodeQL, Joern, Glean, SCIP, tree-sitter) as pluggable implementations of the ADR-008 Codebase Analysis Capability Contract alongside Graphify; document in Tooling without Framework leakage. Split from gap #9 on 2026-09-13. |
 | Phase | Develop (Specify completed in-session with PO approval) |
-| Status | Completed |
+| Status | Completed — merged (PR #23) |
 | Date | 2026-11-11 |
 
 ---
