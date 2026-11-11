@@ -5,7 +5,7 @@
 | Work Item | WI-009 |
 | Origin | [issue #6](https://github.com/Nealsch/ForgeOS/issues/6) — skill-gaps #5–#7; plus skill-graph gaps #4–#7 (4 dangling refs) per handoff queue |
 | Phase | Develop (Specify completed in-session with PO approval) |
-| Status | Completed — pending PR review |
+| Status | Completed — merged (PR #22) |
 | Date | 2026-09-15 |
 
 ---

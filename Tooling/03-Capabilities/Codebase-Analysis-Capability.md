@@ -102,7 +102,7 @@ Adding or replacing a tool must never require changes to the Codebase Analyst Ag
 | --- | --- | --- | --- |
 | Graphify | Preferred | `Tooling/01-Platforms/Graphify/README.md` | First implementation. MCP-native. |
 
-Future tools may be added here without Framework changes.
+Future tools may be added here without Framework changes. Candidate tooling (CodeQL, Joern, Glean, SCIP, tree-sitter) has been evaluated against this contract — see `Codebase-Analysis-Tooling-Evaluation.md` for findings, dispositions and re-evaluation triggers. No evaluated candidate satisfies the contract today.
 
 ---
 
@@ -120,6 +120,7 @@ Future tools may be added here without Framework changes.
 * **ADR-007** — Codebase Analysis is an Agent, Not a Skill.
 * **ADR-008** — Codebase Analysis Tooling Capability & Graphify Integration Contract.
 * `Tooling/01-Platforms/Graphify/README.md` — the Graphify implementation profile.
+* `Tooling/03-Capabilities/Codebase-Analysis-Tooling-Evaluation.md` — the recorded evaluation of candidate tools (non-normative).
 * `Tooling/02-Adapters/MCP/README.md` — the preferred adapter.
 * `Framework/04-Agents/Codebase Analyst/README.md` — the Agent that consumes the capability.
 * `Tooling/README.md` — the Platform Adapter Contract this mirrors.
