@@ -99,4 +99,5 @@ Capabilities only records **support**; it does not define capability.
 * `Tooling/01-Platforms/Graphify/README.md` — Graphify profile (external tool, not an AI platform).
 * `Tooling/02-Adapters/README.md` — adapter mechanisms referenced in the columns.
 * `Tooling/03-Capabilities/Codebase-Analysis-Capability.md` — the Codebase Analysis Capability Contract (ADR-008).
+* `Tooling/03-Capabilities/Codebase-Analysis-Tooling-Evaluation.md` — recorded evaluation of candidate Codebase Analysis tools (WI-010).
 * `Framework/11-Collaboration Orchestration/AI-Program-Manager.md` — the "AI-PM host" column's meaning.
